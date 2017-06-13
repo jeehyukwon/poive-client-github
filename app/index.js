@@ -5,7 +5,7 @@ const BrowserWindow = electron.BrowserWindow
 const electronSettings = require('electron-settings')
 const electronPlatform = require('electron-platform')
 const ipcMain = electron.ipcMain
-const path = require('path') 
+const path = require('path')
 
 let mainWindow = null
 let outputWindow = null

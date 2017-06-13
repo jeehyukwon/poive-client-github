@@ -1,27 +1,27 @@
 # Poive
 
-시작하기 위해 다음과 같이 Node 모듈을 설치합니다 :
+To start, install npm modules :
 
 ```bash
 $ npm install
 ```
 
-다음과 같이 개발환경을 실행합니다 :
+Run development environment :
 
 ```bash
 $ npm run dev
-# Electron App을 실행합니다 (./build/server.js로 실행)
+# Run Electron App with ./build/server.js
 $ npm run app-dev
 ```
 
-다음과 같이 Build합니다 :
+Build :
 
 ```bash
 $ npm run build
-# Electron App을 실행합니다 (./app/dist로 실행)
+# Run Electron App with ./app/dist/index.html
 $ npm run app-prod
 ```
 
 ---
 
-Poive는 [VuePack](https://github.com/egoist/vuepack) 으로 만들어진 프로젝트입니다.
+Powered by [Electron](https://github.com/electron/electron), [VuePack](https://github.com/egoist/vuepack)
