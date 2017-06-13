@@ -3,20 +3,16 @@
   slide(v-show="!$store.state.output.isBlack", :slide.sync="$store.getters.playingSlide", :scene.sync="$store.getters.playingScene", output)
 </template>
 <script>
-import {ipcRenderer} from 'electron'
-
-import $ from 'jquery'
-
 import slide from 'components/_slide'
 
 import addKeyEventListener from 'keys/output'
 import addIpcListener from 'ipc/output'
 
 export default {
-  components: {slide},
+  components: { slide },
   computed: {},
   methods: {},
-  mounted(){
+  mounted () {
     this.$store.state.output.isPlaying = true
     this.$store.state.output.isOutputScreen = true
 

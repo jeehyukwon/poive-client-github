@@ -57,8 +57,8 @@ export default {
   watch: {
     'sheet.groups': {
       deep: true,
-      handler(groups){
-        if(this.$store.state.output.isPlaying){
+      handler (groups) {
+        if (this.$store.state.output.isPlaying) {
           ipcRenderer.send('sendSheet', groups)
         }
         this.$store.state.sheet.isModified = true
@@ -66,22 +66,22 @@ export default {
     },
     'view': {
       deep: true,
-      handler(view){
+      handler (view) {
         electronSettings.set('poive.view', view)
       }
     }
   },
-  beforeMount(){
+  beforeMount () {
     // Configuration Load or Install (when first-time running)
     this.$store.dispatch('initConf')
     this.$store.dispatch('newSheet')
   },
-  mounted(){
+  mounted () {
     // Resizable Inspector
     resizable({
-      handles: "w",
+      handles: 'w',
       minWidth: 300,
-      resize(event, ui){
+      resize (event, ui) {
         ui.element.css('left', 0)
       }
     }, $('#app > .main > .right'))
@@ -90,21 +90,19 @@ export default {
     addKeyEventListener(this.$store)
     addIpcListener(this.$store)
 
-    screen.on('display-added', (event)=>{
+    screen.on('display-added', (event) => {
       this.$store.state.conf.screens = screen.getAllDisplays()
     })
-    screen.on('display-removed', (event)=>{
+    screen.on('display-removed', (event) => {
       this.$store.state.conf.screens = screen.getAllDisplays()
       // 만약 선택된 디스플레이가 전체 리스트 안에 없으면
-      if(this.$store.state.conf.outputDisplay >= this.$store.state.conf.screens.length){
+      if (this.$store.state.conf.outputDisplay >= this.$store.state.conf.screens.length) {
           // 쇼가 진행중이면 멈추고
-          if(this.$store.state.output.isPlaying) this.$store.dispatch('playOff')
-          // 맨 첫번째로 바꾼다!
-          this.$store.state.conf.outputDisplay = 0
-          this.$store.commit('changeOutputScreen')
+        if (this.$store.state.output.isPlaying) this.$store.dispatch('playOff')
+        // 맨 첫번째로 바꾼다!
+        this.$store.state.conf.outputDisplay = 0
+        this.$store.commit('changeOutputScreen')
       }
-      // console.log(this.output.screens.list)
-      // console.log(this.output.screens.selected)
     })
   }
 }

@@ -48,9 +48,9 @@
         i.ion-ios-timer
 </template>
 <script>
-import { ipcRenderer, remote } from 'electron'
+import { remote } from 'electron'
 import { isDarwin } from 'electron-platform'
-const window = remote.BrowserWindow.getFocusedWindow()
+const browserWindow = remote.BrowserWindow.getFocusedWindow()
 
 import fileIcon from 'assets/images/icon_file.svg'
 import winHideIcon from 'assets/images/win_hide.svg'
@@ -60,7 +60,7 @@ import winCloseIcon from 'assets/images/win_close.svg'
 
 export default {
   components: {},
-  data(){
+  data () {
     return {
       fileIcon,
       winHideIcon,
@@ -73,21 +73,21 @@ export default {
     }
   },
   methods: {
-    maximize(){
-      if (window.isMaximized()) window.unmaximize()
-      else window.maximize()
+    maximize () {
+      if (browserWindow.isMaximized()) browserWindow.unmaximize()
+      else browserWindow.maximize()
       this.isMaximized = !this.isMaximized
     },
-    minimize(){
-      window.minimize()
+    minimize () {
+      browserWindow.minimize()
     },
-    close(){
-      self.close()
+    close () {
+      window.close()
     }
   },
-  mounted(){
-    window.on('enter-full-screen', (event) => {this.isFullscreen = true})
-    window.on('leave-full-screen', (event) => {this.isFullscreen = false})
+  mounted () {
+    browserWindow.on('enter-full-screen', (event) => { this.isFullscreen = true })
+    browserWindow.on('leave-full-screen', (event) => { this.isFullscreen = false })
   }
 }
 </script>

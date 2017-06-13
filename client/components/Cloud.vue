@@ -17,7 +17,5 @@
             |{{ $store.state.lang[$store.state.conf.lang].cloud.comingSoon.subtitle }}
 </template>
 <script>
-export default {
-
-}
+export default {}
 </script>

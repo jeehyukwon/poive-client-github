@@ -14,10 +14,10 @@ transition(name="context")
 import $ from 'jquery'
 export default {
   methods: {
-    contextItemClick(item, event){
+    contextItemClick (item, event) {
       $(event.currentTarget).addClass('click')
       this.$store.state.context.isActive = false
-      if (item.dispatch !== undefined){
+      if (item.dispatch !== undefined) {
         if (item.param === undefined) {
           this.$store.dispatch(item.dispatch)
         } else {

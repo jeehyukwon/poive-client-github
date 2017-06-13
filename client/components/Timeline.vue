@@ -31,7 +31,7 @@ import slide from 'components/_slide'
 import draggable from 'vuedraggable'
 
 export default {
-  components: {slide, draggable}
+  components: { slide, draggable }
 }
 </script>
 

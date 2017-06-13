@@ -89,6 +89,6 @@ import popup from 'components/_popup'
 
 export default {
   props: ['flags'],
-  components: {popup}
+  components: { popup }
 }
 </script>

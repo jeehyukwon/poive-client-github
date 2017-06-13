@@ -36,7 +36,6 @@
 </template>
 
 <script>
-import path from 'path'
 import { remote } from 'electron'
 const { dialog } = remote
 
@@ -44,11 +43,11 @@ import base64Img from 'base64-img'
 
 export default {
   props: ['value'],
-  data(){
+  data () {
     return {}
   },
   methods: {
-    encodeImage(){
+    encodeImage () {
       dialog.showOpenDialog({
         filters: [
           { name: 'PNG Image', extensions: ['png'] },
@@ -62,7 +61,7 @@ export default {
         }
       })
     },
-    deleteImage(){
+    deleteImage () {
       this.value.img = ''
       this.$emit('input', this.value)
     }

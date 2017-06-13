@@ -31,9 +31,9 @@ li.scene(v-if="sceneFilter(scene)", :class="{'selected': $store.getters.selected
 import markdown from 'components/_markdown'
 
 export default {
-  components: {markdown},
+  components: { markdown },
   props: ['scene', 'gIndex', 'sIndex'],
-  data(){
+  data () {
     return {
       markdown: {
         flags: {
@@ -45,10 +45,10 @@ export default {
     }
   },
   methods: {
-    sceneFilter(scene){
+    sceneFilter (scene) {
       return (!this.$store.state.sheet.filter) ? true : scene.title.toUpperCase().indexOf(this.$store.state.sheet.filter.toUpperCase()) > -1
     },
-    sceneNameEdit(event){
+    sceneNameEdit (event) {
       event.stopPropagation()
     }
   }

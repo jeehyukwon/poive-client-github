@@ -24,13 +24,13 @@ import draggable from 'vuedraggable'
 
 export default {
   props: ['value', 'sIndex', 'gIndex'],
-  components: {slide, draggable},
+  components: { slide, draggable },
   methods: {
-    sceneFilter(scene){
+    sceneFilter (scene) {
       return (!this.$store.state.sheet.filter) ? true : scene.title.toUpperCase().indexOf(this.$store.state.sheet.filter.toUpperCase()) > -1
     }
   },
-  mounted(){
+  mounted () {
   }
 }
 </script>

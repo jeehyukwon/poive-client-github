@@ -9,47 +9,47 @@
 import $ from 'jquery'
 
 import obj from 'components/_slide.obj.vue'
- 
+
 export default {
-  components: {obj},
+  components: { obj },
   props: ['slide', 'scene', 'resizable', 'output'],
-  mounted(){
+  mounted () {
     var element = $(this.$el)
     if (this.output === undefined) {
       // output 화면이 아닌 경우
       if (this.resizable === undefined || this.resizable === 'width') {
         // width 기준으로 resize 하는 경우
-        element.parent().ready(function(){
-          element.css('height', element.parent().width()/4*3);
-          element.css('font-size', element.height()/30);
-          element.parents().resize(function(){
-            element.css('height', element.parent().width()/4*3);
-            element.css('font-size', element.height()/30);
+        element.parent().ready(() => {
+          element.css('height', element.parent().width() / 4 * 3)
+          element.css('font-size', element.height() / 30)
+          element.parents().resize(() => {
+            element.css('height', element.parent().width() / 4 * 3)
+            element.css('font-size', element.height() / 30)
           })
         })
       } else {
         // height 기준으로 resize 하는 경우
-        element.parent().ready(function(){
-          element.css('width', element.parent().height()/3*4);
-          element.css('font-size', element.width()/40);
-          element.parents().resize(function(){
-            element.css('width', element.parent().height()/3*4);
-            element.css('font-size', element.width()/40);
+        element.parent().ready(() => {
+          element.css('width', element.parent().height() / 3 * 4)
+          element.css('font-size', element.width() / 40)
+          element.parents().resize(() => {
+            element.css('width', element.parent().height() / 3 * 4)
+            element.css('font-size', element.width() / 40)
           })
         })
       }
     } else {
       // output인 경우
-      element.parent().ready(function(){
-        element.css('width', $(window).width());
-        element.css('height', $(window).height());
-        element.css('font-size', Math.min($(window).height()/30, $(window).width()/40));
-        $(window).resize(function(){
-          element.css('width', $(window).width());
-          element.css('height', $(window).height());
-          element.css('font-size', Math.min($(window).height()/30, $(window).width()/40));
-        });
-      });
+      element.parent().ready(() => {
+        element.css('width', $(window).width())
+        element.css('height', $(window).height())
+        element.css('font-size', Math.min($(window).height() / 30, $(window).width() / 40))
+        $(window).resize(() => {
+          element.css('width', $(window).width())
+          element.css('height', $(window).height())
+          element.css('font-size', Math.min($(window).height() / 30, $(window).width() / 40))
+        })
+      })
     }
   }
 }

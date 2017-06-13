@@ -7,6 +7,6 @@
 import slide from 'components/_slide'
 
 export default {
-  components: {slide}
+  components: { slide }
 }
 </script>

@@ -46,8 +46,6 @@
 </template>
 
 <script>
-import resizable from 'jquery-ui/ui/widgets/resizable'
-
 import draggable from 'vuedraggable'
 
 import slide from 'components/_slide'
@@ -55,40 +53,30 @@ import scenesScene from 'components/_control.scenes.scene'
 import slidesScene from 'components/_control.slides.scene'
 
 export default {
-  components: {slide, scenesScene, slidesScene, draggable},
+  components: { slide, scenesScene, slidesScene, draggable },
   computed: {
   },
   methods: {},
-  mounted(){
-    // Resizable Scenes
-    /*resizable({
-      handles: "e",
-      minWidth: 180
-    }, this.$el.children[1].children[0])*/
-
+  mounted () {
     // Scroll Syncing between .control-scenes, .control-slides
     let isScenesScrolling = false
     let isSlidesScrolling = false
     const controlScenes = this.$el.children[1].children[0]
     const controlSlides = this.$el.children[1].children[1]
-     controlScenes.onscroll = function() {
+    controlScenes.onscroll = function () {
       if (!isScenesScrolling) {
-        isSlidesScrolling = true;
-        controlSlides.scrollTop = this.scrollTop;
+        isSlidesScrolling = true
+        controlSlides.scrollTop = this.scrollTop
       }
-      isScenesScrolling = false;
+      isScenesScrolling = false
     }
-    controlSlides.onscroll = function() {
+    controlSlides.onscroll = function () {
       if (!isSlidesScrolling) {
-        isScenesScrolling = true;
-        controlScenes.scrollTop = this.scrollTop;
+        isScenesScrolling = true
+        controlScenes.scrollTop = this.scrollTop
       }
-      isSlidesScrolling = false;
+      isSlidesScrolling = false
     }
   }
 }
 </script>
-<!--  this.$store.state.count 
-      this.$store.commit('INCREMENT');
-      this.$store.dispatch('incrementAsync');
--->

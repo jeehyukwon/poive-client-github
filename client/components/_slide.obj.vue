@@ -22,7 +22,6 @@ export default {
 </script>
 <style lang="scss">
 .component-slide-obj{
-  //background-color: rgba(255, 255, 255, .1);
   font-size: 1em;
   position: absolute;
   & > .text{

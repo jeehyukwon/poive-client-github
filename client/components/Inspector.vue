@@ -68,6 +68,6 @@ import slide from 'components/_slide'
 import obj from 'components/_inspector.obj'
 
 export default {
-  components: {slide, obj}
+  components: { slide, obj }
 }
 </script>

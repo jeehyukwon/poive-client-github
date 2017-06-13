@@ -46,9 +46,9 @@ import slide from 'components/_slide'
 
 export default {
   props: ['flags', 'scene'],
-  components: {popup, slide},
+  components: { popup, slide },
   computed: {
-    previewMarkdown(){
+    previewMarkdown () {
       var markdown = this.scene.markdown
       if (markdown.text === '') {
         return false
@@ -89,9 +89,9 @@ export default {
     }
   },
   methods: {
-    appendMarkdownToScene(){
+    appendMarkdownToScene () {
       this.scene.slides.push.apply(this.scene.slides, this.previewMarkdown)
-      this.scene.markdown.text = ""
+      this.scene.markdown.text = ''
     }
   }
 }
