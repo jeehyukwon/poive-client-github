@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1000px" height="1000px" viewBox="0 0 1000 1000" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.7 (28169) - http://www.bohemiancoding.com/sketch -->
+    <title>.pvd</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="100%" y1="0%" x2="2.20224809%" y2="97.7977519%" id="linearGradient-1">
+            <stop stop-color="#EBEBEB" offset="0%"></stop>
+            <stop stop-color="#B6B6B6" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Icon" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id=".pvd">
+            <g id="File-Icon" transform="translate(166.000000, 61.000000)">
+                <polygon id="Rectangle-1" fill="#EFEFEF" points="0 0 475.01828 0 669 184.619047 669 877.995169 0 877.995169"></polygon>
+                <g id="P" transform="translate(133.800000, 202.614270)">
+                    <g id="Group">
+                        <path d="M218.797814,39.0196974 L218.797814,457.087884 L109.398907,418.068187 L109.398907,0 L218.797814,39.0196974 Z M305.222951,69.6780311 L399.860634,162.76225 L399.860634,297.675113 L305.222951,365.112883 L218.797814,335.011974 L218.797814,39.0196974 L305.222951,69.6780311 Z" id="Front-P" fill="#FFAC99"></path>
+                        <polygon id="Mid" fill="#FFC200" points="218.797814 457.087884 109.398907 511.158036 109.398907 389.080552 218.797814 335.011974"></polygon>
+                        <polygon id="Path-10" fill="#FFC200" points="195.827344 419.18877 109.420541 389.087774 218.843429 334.992785 305.241161 365.113457"></polygon>
+                        <path d="M109.398907,93.0898496 L109.398907,511.158036 L0,472.138339 L0,54.0701522 L109.398907,93.0898496 Z M195.824044,123.748183 L290.461727,216.859705 L290.461727,351.745265 L195.824044,419.183035 L109.398907,389.082126 L109.398907,93.0898496 L195.824044,123.748183 Z" id="Front-P" fill="#583FF3" style="mix-blend-mode: darken;"></path>
+                        <polygon id="Path-6" fill="#29C08F" style="mix-blend-mode: darken;" points="0.00938143705 54.0742349 195.837213 123.751409 290.468922 216.841795 290.490827 351.7319 195.837214 419.175973 305.232322 365.157587 399.892303 297.674767 399.853069 162.787193 305.258172 69.7097655 109.421352 0.0197128453"></polygon>
+                        <polygon id="Path-7" fill-opacity="0.05" fill="#000000" points="195.827291 123.752432 290.475601 216.853617 399.859883 162.771759 305.241413 69.6795509"></polygon>
+                        <polygon id="Path-8" fill-opacity="0.1" fill="#000000" points="290.468116 216.837386 290.45936 351.735763 399.8531 297.662871 399.862074 162.767018"></polygon>
+                        <polygon id="Path-9" fill-opacity="0.4" fill="#000000" points="290.494847 351.735751 399.856824 297.654486 305.266864 365.068611 195.80695 419.188988"></polygon>
+                    </g>
+                </g>
+                <polygon id="Path-42" fill="url(#linearGradient-1)" points="475 0.0925830741 668.909794 184.504568 475 184.504573"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,494 @@
+{
+    "title": {
+        "en": "Heart Of Gold"
+    },
+    "author": "Team Poive",
+    "abbr": "heartofgold",
+    "sceneStyle": {
+        "backgroundColor": "black"
+    },
+    "sceneObj": [
+        {
+            "title": {
+                "ko": "머리말 1",
+                "en": "Header 1"
+            },
+            "typeSelectable": "text",
+            "type": "sceneTitle",
+            "editable": true,
+            "text": "",
+            "style": {
+                "top": "1em",
+                "left": "1em",
+                "color": "rgba(255,255,255,.4)"
+            },
+            "styleToggle": false
+        },
+        {
+            "title": {
+                "ko": "머리말 2",
+                "en": "Header 2"
+            },
+            "typeSelectable": false,
+            "type": "oneLine",
+            "editable": false,
+            "text": "Poive",
+            "style": {
+                "top": "1em",
+                "right": "1em",
+                "color": "rgba(255,255,255,.4)"
+            },
+            "styleToggle": false
+        },
+        {
+            "title": {
+                "ko": "꼬리말 1",
+                "en": "Footer 1"
+            },
+            "typeSelectable": "text",
+            "type": "oneLine",
+            "editable": true,
+            "text": "",
+            "style": {
+                "bottom": "1em",
+                "left": "1em",
+                "color": "rgba(255,255,255,.4)"
+            },
+            "styleToggle": false
+        },
+        {
+            "title": {
+                "ko": "꼬리말 2",
+                "en": "Footer 2"
+            },
+            "typeSelectable": "text",
+            "type": "continueIcon",
+            "editable": true,
+            "text": "",
+            "style": {
+                "bottom": "1em",
+                "right": "1em",
+                "color": "rgba(255,255,255,.4)"
+            },
+            "styleToggle": false
+        }
+    ],
+    "defaultSlideLayout": "2",
+    "slideLayout": [
+        {
+            "title": {
+                "ko": "제목",
+                "en": "Title"
+            },
+            "obj": [
+                {
+                    "title": {
+                        "ko": "제목",
+                        "en": "Title"
+                    },
+                    "typeSelectable": "text",
+                    "type": "oneLine",
+                    "editable": true,
+                    "text": "",
+                    "style": {
+                        "top": "7em",
+                        "left": "2em",
+                        "color": "rgb(251,184,41)",
+                        "text": {
+                            "fontSize": "4em",
+                            "lineHeight": "140%"
+                        }
+                    },
+                    "styleToggle": false
+                },
+                {
+                    "title": {
+                        "ko": "캡션",
+                        "en": "Caption"
+                    },
+                    "typeSelectable": false,
+                    "type": "multiLine",
+                    "editable": true,
+                    "text": "",
+                    "style": {
+                        "top": "20em",
+                        "left": "2.2em",
+                        "color": "rgba(255,255,255,.6)",
+                        "text": {
+                            "fontSize": "1.5em",
+                            "lineHeight": "180%"
+                        }
+                    },
+                    "styleToggle": false
+                }
+            ]
+        },
+        {
+            "title": {
+                "ko": "제목 2단",
+                "en": "Title 2 Lines"
+            },
+            "obj": [
+                {
+                    "title": {
+                        "ko": "제목",
+                        "en": "Title"
+                    },
+                    "typeSelectable": "text",
+                    "type": "oneLine",
+                    "editable": true,
+                    "text": "",
+                    "style": {
+                        "top": "7em",
+                        "left": "2em",
+                        "color": "rgb(251,184,41)",
+                        "text": {
+                            "fontSize": "4em",
+                            "lineHeight": "140%"
+                        }
+                    },
+                    "styleToggle": false
+                },
+                {
+                    "title": {
+                        "ko": "부제목",
+                        "en": "Subtitle"
+                    },
+                    "typeSelectable": "text",
+                    "type": "oneLine",
+                    "editable": true,
+                    "text": "",
+                    "style": {
+                        "top": "13.5em",
+                        "left": "2em",
+                        "color": "rgb(251,184,41)",
+                        "text": {
+                            "fontSize": "2.5em",
+                            "lineHeight": "140%"
+                        }
+                    },
+                    "styleToggle": false
+                },
+                {
+                    "title": {
+                        "ko": "캡션",
+                        "en": "Caption"
+                    },
+                    "typeSelectable": false,
+                    "type": "multiLine",
+                    "editable": true,
+                    "text": "",
+                    "style": {
+                        "top": "20em",
+                        "left": "2.2em",
+                        "color": "rgba(255,255,255,.6)",
+                        "text": {
+                            "fontSize": "1.5em",
+                            "lineHeight": "180%"
+                        }
+                    },
+                    "styleToggle": false
+                }
+            ]
+        },
+        {
+            "title": {
+                "ko": "4줄",
+                "en": "4 Lines"
+            },
+            "obj": [
+                {
+                    "title": {
+                        "ko": "내용",
+                        "en": "Contents"
+                    },
+                    "typeSelectable": false,
+                    "type": "multiLine",
+                    "editable": true,
+                    "styleSelectable": true,
+                    "isAltStyle": true,
+                    "text": "",
+                    "style": {
+                        "top": "5.5em",
+                        "boxSizing": "border-box",
+                        "color": "rgba(255,255,255,1)",
+                        "padding": "0 2.2em",
+                        "width": "100%",
+                        "text": {
+                            "fontSize": "2.6em",
+                            "lineHeight": "180%"
+                        }
+                    },
+                    "altStyle": {
+                        "top": "5.5em",
+                        "boxSizing": "border-box",
+                        "color": "rgba(255,255,255,1)",
+                        "padding": "0 2.2em",
+                        "width": "100%",
+                        "text": {
+                            "fontSize": "2.6em",
+                            "lineHeight": "180%"
+                        }
+                    },
+                    "styleToggle": false
+                }
+            ]
+        },
+        {
+            "title": {
+                "ko": "4줄 컬러",
+                "en": "4 Lines Colour"
+            },
+            "obj": [
+                {
+                    "title": {
+                        "ko": "내용",
+                        "en": "Contents"
+                    },
+                    "typeSelectable": false,
+                    "type": "multiLine",
+                    "editable": true,
+                    "text": "",
+                    "style": {
+                        "top": "5.5em",
+                        "boxSizing": "border-box",
+                        "padding": "0 2.2em",
+                        "width": "100%",
+                        "color": "rgb(251,184,41)",
+                        "text": {
+                            "fontSize": "2.6em",
+                            "lineHeight": "180%"
+                        }
+                    },
+                    "styleToggle": false
+                }
+            ]
+        },
+        {
+            "title": {
+                "ko": "2단 4줄",
+                "en": "2 Columns 4 Lines"
+            },
+            "obj": [
+                {
+                    "title": {
+                        "ko": "내용 무색",
+                        "en": "Contents with No Colour"
+                    },
+                    "typeSelectable": false,
+                    "type": "multiLine",
+                    "editable": true,
+                    "text": "",
+                    "style": {
+                        "top": "5.5em",
+                        "boxSizing": "border-box",
+                        "color": "rgba(255,255,255,1)",
+                        "padding": "0 2.2em",
+                        "width": "100%",
+                        "text": {
+                            "fontSize": "2.6em",
+                            "lineHeight": "180%"
+                        }
+                    },
+                    "styleToggle": false
+                },
+                {
+                    "title": {
+                        "ko": "내용 컬러",
+                        "en": "Contents with the Colour"
+                    },
+                    "typeSelectable": false,
+                    "type": "multiLine",
+                    "editable": true,
+                    "text": "",
+                    "style": {
+                        "color": "rgb(251,184,41)",
+                        "top": "14.8em",
+                        "boxSizing": "border-box",
+                        "padding": "0 2.2em",
+                        "width": "100%",
+                        "text": {
+                            "fontSize": "2.6em",
+                            "lineHeight": "180%"
+                        }
+                    },
+                    "styleToggle": false
+                }
+            ]
+        },
+        {
+            "title": {
+                "ko": "6줄",
+                "en": "6 Lines"
+            },
+            "obj": [
+                {
+                    "title": {
+                        "ko": "내용",
+                        "en": "Contents"
+                    },
+                    "typeSelectable": false,
+                    "type": "multiLine",
+                    "editable": true,
+                    "text": "",
+                    "style": {
+                        "boxSizing": "border-box",
+                        "color": "rgba(255,255,255,1)",
+                        "top": "4.3em",
+                        "padding": "0 2.2em",
+                        "width": "100%",
+                        "text": {
+                            "fontSize": "2em",
+                            "lineHeight": "180%"
+                        }
+                    },
+                    "styleToggle": false
+                }
+            ]
+        },
+        {
+            "title": {
+                "ko": "6줄 컬러",
+                "en": "6 Lines Colour"
+            },
+            "obj": [
+                {
+                    "title": {
+                        "ko": "내용",
+                        "en": "Contents"
+                    },
+                    "typeSelectable": false,
+                    "type": "multiLine",
+                    "editable": true,
+                    "text": "",
+                    "style": {
+                        "boxSizing": "border-box",
+                        "top": "4.3em",
+                        "padding": "0 2.2em",
+                        "width": "100%",
+                        "color": "rgb(251,184,41)",
+                        "text": {
+                            "fontSize": "2em",
+                            "lineHeight": "180%"
+                        }
+                    },
+                    "styleToggle": false
+                }
+            ]
+        },
+        {
+            "title": {
+                "ko": "2단 6줄",
+                "en": "2 Columns 6 Lines"
+            },
+            "obj": [
+                {
+                    "title": {
+                        "ko": "내용 무색",
+                        "en": "Contents with No Colour"
+                    },
+                    "typeSelectable": false,
+                    "type": "multiLine",
+                    "editable": true,
+                    "text": "",
+                    "style": {
+                        "boxSizing": "border-box",
+                        "color": "rgba(255,255,255,1)",
+                        "top": "4.3em",
+                        "padding": "0 2.2em",
+                        "width": "100%",
+                        "text": {
+                            "fontSize": "2em",
+                            "lineHeight": "180%"
+                        }
+                    },
+                    "styleToggle": false
+                },
+                {
+                    "title": {
+                        "ko": "내용 컬러",
+                        "en": "Contents with the Colour"
+                    },
+                    "typeSelectable": false,
+                    "type": "multiLine",
+                    "editable": true,
+                    "text": "",
+                    "style": {
+                        "boxSizing": "border-box",
+                        "top": "14.8em",
+                        "color": "rgb(251,184,41)",
+                        "padding": "0 2.2em",
+                        "width": "100%",
+                        "text": {
+                            "fontSize": "2em",
+                            "lineHeight": "180%"
+                        }
+                    },
+                    "styleToggle": false
+                }
+            ]
+        },
+        {
+            "title": {
+                "ko": "상단 자막",
+                "en": "Top Subtitles"
+            },
+            "obj": [
+                {
+                    "title": {
+                        "ko": "내용",
+                        "en": "Contents"
+                    },
+                    "typeSelectable": false,
+                    "type": "multiLine",
+                    "editable": true,
+                    "text": "",
+                    "style": {
+                        "top": "3em",
+                        "width": "100%",
+                        "boxSizing": "border-box",
+                        "color": "rgba(255,255,255,1)",
+                        "padding": "0 2.2em",
+                        "textAlign": "center",
+                        "text": {
+                            "fontSize": "2em",
+                            "lineHeight": "180%"
+                        }
+                    },
+                    "styleToggle": false
+                }
+            ]
+        },
+        {
+            "title": {
+                "ko": "하단 자막",
+                "en": "Bottom Subtitles"
+            },
+            "obj": [
+                {
+                    "title": {
+                        "ko": "내용",
+                        "en": "Contents"
+                    },
+                    "typeSelectable": false,
+                    "type": "multiLine",
+                    "editable": true,
+                    "text": "",
+                    "style": {
+                        "bottom": "3em",
+                        "width": "100%",
+                        "boxSizing": "border-box",
+                        "color": "rgba(255,255,255,1)",
+                        "padding": "0 2.2em",
+                        "textAlign": "center",
+                        "text": {
+                            "fontSize": "2em",
+                            "lineHeight": "180%"
+                        }
+                    },
+                    "styleToggle": false
+                }
+            ]
+        }
+    ]
+}

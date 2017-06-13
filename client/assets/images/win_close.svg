@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.7 (28169) - http://www.bohemiancoding.com/sketch -->
+    <title>Close</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Skype-Settings-Ribbon" transform="translate(-1186.000000, -121.000000)" fill="#FFFFFF">
+            <g id="Window" transform="translate(221.000000, 103.000000)">
+                <g id="Controls" transform="translate(897.000000, 18.000000)">
+                    <polyline id="Close" points="82 12.5797101 80.5797101 14 75 8.42028986 69.4202899 14 68 12.5797101 73.5797101 7 68 1.42028986 69.4202899 0 75 5.57971014 80.5797101 0 82 1.42028986 76.4202899 7 82 12.5797101"></polyline>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

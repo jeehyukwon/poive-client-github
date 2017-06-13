@@ -1,0 +1,449 @@
+@import 'variables';
+
+#control {
+  background-color: $section-background;
+  //border: $section-border;
+  border-radius: $section-border-radius;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  margin: $section-margin;
+  overflow: hidden;
+  transition: .15s;
+  &:focus {
+    box-shadow: 0 0 0 2px $section-focus-outline-color;
+    outline: none;
+  }
+}
+
+.control-top {
+  background: $control-top-background;
+  //border-bottom: $section-border;
+  border-top-left-radius: $section-border-radius;
+  border-top-right-radius: $section-border-radius;
+  box-shadow: $control-top-box-shadow;
+  padding: .05em .15em .15em;
+  z-index: 1;
+  .control-top-filter {
+    display: inline-block;
+    position: relative;
+    i {
+      color: $control-top-filter-placeholder-font-color;
+      font-size: .85em;
+      left: .75em;
+      position: absolute;
+      top: .65em;
+    }
+    input {
+      background: $control-top-filter-background;
+      border: 0;
+      border-radius: $control-top-filter-border-radius;
+      //box-shadow: 0 0 0 .5px $control-top-filter-border-color, 0 1.5px 0 0 $control-top-filter-shadow-color;
+      color: $control-top-filter-font-color;
+      display: inline-block;
+      font: $poive-font;
+      font-size: .8em;
+      font-weight: 200;
+      margin: .4em .25em .25em;
+      padding: .3em .4em .3em 2.2em;
+      transition: box-shadow .2s;
+      width: 15em;
+      &:focus {
+        box-shadow: 0 0 0 .15em $control-top-filter-focus-color;
+        outline: none;
+        &::placeholder {
+          padding-left: 0;
+        }
+      }
+      &::placeholder {
+        color: $control-top-filter-placeholder-font-color;
+        padding-left: 4.2em;
+        transition: padding .3s;
+      }
+    }
+  }
+  .control-top-button {
+    background: $control-top-button-background;
+    border-radius: $control-top-button-border-radius;
+    //box-shadow: 0 0 0 .5px $control-top-button-border-color, 0 1.5px 0 0 $control-top-button-shadow-color, inset 0 .1em 0 0 $control-top-button-inner-shadow-color;
+    color: $control-top-button-font-color;
+    cursor: pointer;
+    display: inline-block;
+    font: $poive-font;
+    font-size: .8em;
+    font-weight: 200;
+    margin: .3em;
+    padding: .3em .8em .25em;
+    &.right {
+      float: right;
+    }
+    i {
+      display: inline-block;
+      margin-right: .5em;
+      margin-top: .05em;
+      vertical-align: top;
+    }
+    &.active {
+      //background: rgb(54, 106, 161);
+      background: rgb(19, 19, 19);
+      //color: $point-color;
+      &:active {
+        //background: rgb(43, 85, 128);
+        background: rgb(9, 9, 9);
+      }
+    }
+    &.icon {
+      i {
+        margin: 0;
+      }
+    }
+    &:active {
+      background: $control-top-button-active-background;
+      border-color: $control-top-button-active-border-color;
+    }
+  }
+}
+
+.control-main {
+  display: flex;
+  flex: 1;
+}
+
+@mixin control-scenes-button {
+  background-color: $control-scenes-button-background;
+  border-radius: $control-scenes-button-border-radius;
+  //box-shadow: 0 0 0 .5px $control-scenes-button-border-color;
+  color: $control-scenes-button-font-color;
+  cursor: pointer;
+  font: $poive-font;
+  font-size: .65em;
+  font-weight: 400;
+  margin-right: .8em;
+  padding: .2em 0;
+  text-align: center;
+  &:last-of-type {
+    margin: 0;
+  }
+  &:active {
+    background-color: $control-scenes-button-active-background;
+  }
+}
+
+.control-scenes {
+  background-color: $control-scenes-background;
+  border-bottom-left-radius: $section-border-radius;
+  //overflow-x: hidden;
+  overflow: scroll;
+  width: 12em;
+  //background-color: red;
+  &::-webkit-scrollbar { 
+    display: none; 
+  }
+  .control-scenes-scrollbar-margin {
+    height: .5em;
+  }
+  & > .groups {
+    box-shadow: 0 1px 0 0 $control-scenes-border-color;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    ul, 
+    li {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+    .group {
+      box-shadow: inset 0 1px 0 0 $control-scenes-border-color;
+      position: relative;
+      &:first-of-type {
+        box-shadow: none;
+      }
+      .group-title {
+        display: flex;
+        font-size: .75em;
+        height: 2.4em;
+        width: 100%;
+        i {
+          color: $control-scenes-group-font-color;
+          margin-right: .4em;
+          padding: .7em 0 0 .5em;
+        }
+        input {
+          background: none;
+          border: 0;
+          color: $control-scenes-group-font-color;
+          flex: 1;
+          font: $poive-font;
+          font-size: 1em;
+          font-weight: 200;
+          outline: none;
+          padding: 0;
+        }
+      }
+      .group-handle {
+        color: rgba(255, 255, 255, .3);
+        padding: .4em .6em;
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+      .scenes {
+        margin-left: .5em;
+        .scene {
+          background-color: $control-scenes-background;
+          box-shadow: inset 1px 1px 0 0 $control-scenes-border-color;
+          display: flex;
+          flex-direction: column;
+          height: 8.5em;
+          padding: .6em .6em 0;
+          &.selected {
+            background: $control-scenes-scene-active-background;
+          }
+          .scene-title {
+            display: flex;
+            flex-direction: row;
+            font-size: .9em;
+            height: 1em;
+            i {
+              color: $control-scenes-scene-font-color;
+              width: 1.2em;
+            }
+            input {
+              background: none;
+              border: 0;
+              color: $control-scenes-scene-font-color;
+              flex: 1;
+              font: $poive-font;
+              font-size: 1em;
+              font-weight: 200;
+              margin: 0;
+              outline: none;
+              padding: 0;
+              width: 100%;
+            }
+          }
+          .scene-blank {
+            flex: 1;
+          }
+          .scene-edit {
+            margin-bottom: .5em;
+            .scene-edit-buttons {
+              display: flex;
+              margin-top: .5em;
+              .scene-edit-buttons-play {
+                @include control-scenes-button();
+                flex: 1;
+                &.playing {
+                  background-color: rgb(19, 19, 19);
+                  color: $control-play-color;
+                }
+                &.disabled {
+                  color: rgba(255, 255, 255, .2);
+                  cursor: default;
+                }
+              }
+              .scene-edit-buttons-markdown {
+                @include control-scenes-button();
+                flex: 3;
+                padding: .4em 0;
+                position: relative;
+                i {
+                  margin-right: .4em;
+                }
+                .scene-edit-buttons-markdown-is-modified {
+                  background-color: rgba(255, 194, 0, .9);
+                  border-radius: 6px;
+                  height: 6px;
+                  left: .8em;
+                  position: absolute;
+                  top: 50%;
+                  transform: translateY(-50%);
+                  width: 6px;
+                }
+              }
+              .scene-edit-buttons-upload {
+                @include control-scenes-button();
+                flex: 3;
+                i {
+                  margin-right: .4em;
+                }
+                &.disabled {
+                  color: rgba(255, 255, 255, .2);
+                  cursor: default;
+                }
+              }
+            }
+          }
+        }
+        .add-scene {
+          background-color: $control-scenes-background;
+          box-shadow: inset 1px 1px 0 0 $control-scenes-border-color;
+          color: $control-scenes-add-scene-font-color;
+          cursor: pointer;
+          font: $poive-font;
+          font-size: .9em;
+          font-weight: 200;
+          height: 2.8em;
+          padding: .8em .5em 0;
+          transition: color .1s;
+          i {
+            margin-right: .4em;
+          }
+          &:hover {
+            color: $control-scenes-add-scene-hover-font-color;
+          }
+        }
+      }
+    }
+    .add-group {
+      color: $control-scenes-add-group-font-color;
+      cursor: pointer;
+      font: $poive-font;
+      font-size: .75em;
+      font-weight: 200;
+      height: 2.4em;
+      padding: .7em .5em 0;
+      transition: color .1s;
+      i {
+        margin-right: .4em;
+      }
+      &:hover {
+        color: $control-scenes-add-group-hover-font-color;
+      }
+    }
+  }
+}
+
+.control-slides {
+  background-color: $control-slides-background;
+  border-bottom-right-radius: $section-border-radius;
+  display: flex;
+  flex: 1;
+  overflow: scroll;
+  white-space: nowrap;
+  width: 100%;
+  & > .groups {
+    flex: 1;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    ul, 
+    li {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+    .group {
+      box-shadow: inset 0 1px 0 0 $control-slides-border-color;
+      padding-top: 1.8em;
+      &:first-of-type {
+        box-shadow: none;
+      }
+      .group-title {
+        height: 1.875em;
+      }
+      .add-scene {
+        box-shadow: inset 0 1px 0 0 $control-slides-border-color;
+        height: 2.52em;
+      }
+      .scenes {
+        .scene {
+          box-shadow: inset 0 1px 0 0 $control-slides-border-color;
+          height: 8.5em;
+          padding-left: .5em;
+          white-space: nowrap;
+          &.selected {
+            background-color: rgb(31, 31, 31);
+          }
+          .slides {
+            display: inline-block;
+            height: 100%;
+            padding: .5em 0;
+            vertical-align: top;
+            .slide {
+              border-radius: $control-slides-slide-border-radius;
+              cursor: pointer;
+              display: inline-block;
+              height: 100%;
+              margin-right: .7em;
+              position: relative;
+              transition: box-shadow .3s;
+              &.selected {
+                box-shadow: 0 .1em .2em 0 rgba(0, 0, 0, .3);
+                .slide-info {
+                  background-color: rgb(81, 81, 81);
+                }
+              }
+              &.playing {
+                transition: none;
+                .slide-info {
+                  .slide-info-play-button {
+                    color: $control-play-color;
+                    &:hover {color: $control-play-color;}
+                  }
+                }
+                &.now-playing {
+                  box-shadow: 0 0 0 1.5px $control-play-color;
+                }
+              }
+              .slide-info {
+                background-color: rgb(51, 51, 51);
+                border-bottom-left-radius: $control-slides-slide-border-radius;
+                border-top-left-radius: $control-slides-slide-border-radius;
+                //box-shadow: inset 0 1.5px 0 0 rgba(255, 255, 255, .1), inset 0 -1.5px 0 0 rgba(0, 0, 0, .05);
+                display: inline-block;
+                height: 7.5em;
+                vertical-align: top;
+                width: 1.5em;
+                .slide-info-play-button {
+                  color: rgba(255, 255, 255, .5);
+                  padding: .3em .45em;
+                  &:hover {
+                    color: rgba(255, 255, 255, .7);
+                  }
+                }
+              }
+              .slide-box {
+                border-bottom-right-radius: $control-slides-slide-border-radius;
+                border-top-right-radius: $control-slides-slide-border-radius;
+                box-shadow: inset 0 .1em 0 0 rgba(255, 255, 255, .1);
+                display: inline-block;
+                //height: 7.5em;
+                overflow: hidden;
+                position: relative;
+                vertical-align: top;
+                width: 10em;
+              }
+            }
+            .add-slide {
+              border: .15em solid $control-slides-add-slide-color;
+              border-radius: $control-slides-slide-border-radius;
+              color: $control-slides-add-slide-color;
+              cursor: pointer;
+              display: inline-block;
+              font: $poive-font;
+              font-size: .9em;
+              font-weight: 200;
+              height: 100%;
+              margin-right: .7em;
+              overflow: hidden;
+              padding-top: 3.3em;
+              position: relative;
+              text-align: center;
+              transition: border-color .05s;
+              width: 12.8em;
+              i {
+                margin-right: .4em;
+              }
+              &:hover {
+                border-color: $control-slides-add-slide-hover-color;
+                color: $control-slides-add-slide-hover-color;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

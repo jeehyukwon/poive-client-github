@@ -1,0 +1,86 @@
+$ionicons-font-path: '~ionicons/fonts' !default;
+@import '~ionicons/scss/ionicons';
+
+@import 'variables';
+
+@import 'top';
+@import 'control';
+@import 'preview';
+@import 'cloud';
+@import 'inspector';
+@import 'timeline';
+
+@import 'contextmenu';
+@import 'popup';
+
+@import 'settings';
+@import 'markdown';
+
+* {box-sizing: border-box;}
+
+body {
+  background: $body-background;
+  font-size: 17px;
+  margin: 0;
+  padding: 0;
+  user-select: none;
+}
+
+::-webkit-scrollbar {
+  height: .5em;
+  width: .5em;
+}
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, .1);
+}
+::-webkit-scrollbar-thumb {
+  background-clip: padding-box;
+  background-color: rgba(255, 255, 255, .2);
+  border: 0 solid rgba(0, 0, 0, 0);
+  border-radius: 0;
+  height: 8px;
+}
+::-webkit-scrollbar-button {
+  display: none;
+  height: 0;
+  width: 0;
+}
+::-webkit-scrollbar-corner {
+  background: rgba(0, 0, 0, .2);
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  & > .main {
+    display: flex;
+    flex: 1;
+    //margin-left: 3px;
+    & > .center {
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+      overflow: hidden;
+    }
+    & > .left {
+      display: flex;
+      flex-direction: column;
+      margin-top: 3px;
+      width: 300px;
+    }
+    & > .right {
+      display: flex;
+      flex-direction: column;
+      margin-top: 3px;
+      width: 300px;
+    }
+  }
+  & > .bottom {
+    height: 0;
+  }
+}
+
+#output {
+  overflow: hidden;
+}

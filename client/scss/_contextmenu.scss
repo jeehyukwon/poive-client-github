@@ -1,0 +1,63 @@
+@import 'variables';
+
+#context {
+  height: 100vh;
+  position: fixed;
+  width: 100vw;
+  z-index: 2;
+  #context-menu {
+    background: rgb(22, 22, 22);
+    border: 1px solid rgb(146, 146, 146);
+    border-radius: .3em;
+    box-shadow: 0 .1em .4em .1em rgba(0, 0, 0, .3), 0 0 0 .5px rgba(0, 0, 0, .2), inset 0 0 0 .5px rgba(0, 0, 0, .2);
+    cursor: default;
+    min-width: 130px;
+    padding: .2em 0;
+    position: absolute;
+    z-index: 1;
+    .context-menu-item {
+      color: rgba(255, 255, 255, .9);
+      font: $poive-font;
+      font-size: .8em;
+      font-weight: 200;
+      padding: .15em .7em .15em 1.7em;
+      &.click {
+        animation: flicker .08s;
+        animation-iteration-count: 1;
+      }
+      &:hover {
+        background-color: rgb(41, 79, 117);
+        text-shadow: 0 1px rgba(0, 0, 0, .1);
+      }
+      &.divider {
+        background-color: rgb(36, 36, 36);
+        height: 1px;
+        margin: .3em 0;
+        padding: 0;
+      }
+      &.disabled {
+        color: rgba(255, 255, 255, .3);
+        &:hover {
+          background-color: rgba(0, 0, 0, 0);
+        }
+      }
+    }
+    .context-menu-divider {
+      background-color: rgb(36, 36, 36);
+      height: 1px;
+      margin: .3em 0;
+    }
+  }
+  .context-background {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+}
+
+@keyframes flicker {
+  0% {background-color: rgba(0, 0, 0, 0);}
+  100% {background-color: rgba(0, 0, 0, 0);}
+}

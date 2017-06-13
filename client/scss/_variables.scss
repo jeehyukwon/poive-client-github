@@ -1,0 +1,122 @@
+$poive-font: caption;
+
+$body-background: rgb(55, 55, 55);
+
+$section-background: rgb(31, 31, 31);
+$section-border: 1px solid rgba(31, 31, 31, 1);
+$section-border-radius: .2em;
+$section-focus-outline-color: rgba(255, 255, 255, .2);
+$section-focus-outline-border-color: rgb(125, 125, 125);
+$section-margin: 5px;
+
+$point-color: rgb(92, 91, 234);
+
+/////// Top
+// $top-background: #222;
+$top-background: linear-gradient(rgb(60, 60, 60), rgb(55, 55, 55));
+$top-border-color: rgba(75, 75, 75, 1);
+
+$top-title-background: rgba(0, 0, 0, 0);
+$top-title-height: 0;
+$top-title-font-color: rgba(255, 255, 255, .6);
+
+$top-menuset-group-background: linear-gradient(rgb(75, 75, 75), rgb(70, 70, 70));
+$top-menuset-group-margin-side: 5px;
+$top-menuset-group-margin: 7px 0 3px $top-menuset-group-margin-side;
+$top-menuset-group-border-color: rgba(255, 255, 255, .1);
+$top-menuset-group-border-radius: 3px;
+$top-menuset-group-shadow-color: rgba(0, 0, 0, .2);
+$top-menuset-group-icon-color: rgba(255, 255, 255, .7);
+$top-menuset-group-text-border-color: rgba(0, 0, 0, .05);
+$top-menuset-group-text-border-weight: 1px;
+$top-menuset-group-text-border-weight-minus: -1px;
+$top-menuset-group-label-font-color: rgba(255, 255, 255, .7);
+$top-menuset-group-chevron-color: rgba(255, 255, 255, .6);
+
+$top-menuset-group-click-background: linear-gradient(rgb(65, 65, 65), rgb(60, 60, 60));
+$top-menuset-group-click-border-color: rgba(255, 255, 255, .1);
+$top-menuset-group-active-background: linear-gradient(rgb(19, 19, 19), rgb(19, 19, 19));
+$top-menuset-group-active-border-color: rgba(255, 255, 255, .1);
+$top-menuset-group-active-click-background: linear-gradient(rgb(9, 9, 9), rgb(9, 9, 9));
+$top-menuset-group-active-click-border-color: rgba(255, 255, 255, .1);
+
+//  Control
+$control-play-color: rgb(91, 167, 84);
+// $control-select-color: rgb(237, 159, 97);
+$control-select-color: rgb(58, 95, 160);
+
+$control-header-border-color: rgba(0, 0, 0, .2);
+$control-main-background: rgb(49, 49, 49);
+$control-focus-margin: 3px;
+
+$control-top-background: rgb(36, 36, 36);
+$control-top-box-shadow: 0 0 .2em .2em rgba(0, 0, 0, .3);
+$control-top-filter-border-color: rgb(50, 50, 50);
+$control-top-filter-border-radius: .2em;
+$control-top-filter-background: rgba(255, 255, 255, .05);
+$control-top-filter-shadow-color: rgb(40, 40, 40);
+$control-top-filter-focus-color: rgb(58, 95, 160);
+$control-top-filter-font-color: rgba(255, 255, 255, .7);
+$control-top-filter-placeholder-font-color: rgba(255, 255, 255, .2);
+
+$control-top-button-background: rgb(60, 60, 60);
+$control-top-button-border-color: rgb(50, 50, 50);
+$control-top-button-border-radius: .2em;
+$control-top-button-shadow-color: rgb(40, 40, 40);
+$control-top-button-inner-shadow-color: rgba(255, 255, 255, .05);
+$control-top-button-font-color: rgba(255, 255, 255, .7);
+$control-top-button-active-background: rgb(50, 50, 50);
+$control-top-button-active-border-color: rgb(36, 36, 36);
+
+$control-scenes-background: rgb(41, 41, 41);
+$control-scenes-border-color: rgb(51, 51, 51);
+$control-scenes-group-font-color: rgba(255, 255, 255, .8);
+$control-scenes-scene-font-color: rgba(255, 255, 255, .8);
+$control-scenes-scene-active-background: rgb(51, 51, 51);
+$control-scenes-add-scene-font-color: rgba(255, 255, 255, .3);
+$control-scenes-add-scene-hover-font-color: rgba(255, 255, 255, .7);
+$control-scenes-add-group-font-color: rgba(255, 255, 255, .3);
+$control-scenes-add-group-hover-font-color: rgba(255, 255, 255, .7);
+
+$control-scenes-button-background: rgb(65, 65, 65);
+$control-scenes-button-border-color: rgb(50, 50, 50);
+$control-scenes-button-border-radius: .2em;
+$control-scenes-button-font-color: rgba(255, 255, 255, .8);
+$control-scenes-button-active-background: rgb(55, 55, 55);
+
+$control-slides-background: rgb(21, 21, 21);
+$control-slides-border-color: rgb(31, 31, 31);
+$control-slides-slide-border-radius: .2em;
+$control-slides-add-slide-color: rgba(255, 255, 255, .1);
+$control-slides-add-slide-hover-color: rgba(255, 255, 255, .3);
+
+//  Inspector
+$inspector-tab-item-icon-color: rgba(255, 255, 255, .8);
+$inspector-tab-item-label-color: rgba(255, 255, 255, .8);
+$inspector-tab-item-active-background: rgba(31, 31, 31, 1);
+$inspector-tab-item-active-color: $point-color;
+
+$inspector-main-background: rgb(31, 31, 31);
+
+$inspector-obj-background: rgb(41, 41, 41);
+$inspector-obj-border-color: #242424;
+$inspector-obj-shadow-color: rgba(0, 0, 0, .5);
+$inspector-obj-inset-shadow-color: rgba(255, 255, 255, 0);
+$inspector-obj-title-color: rgba(255, 255, 255, .8);
+$inspector-obj-input-placeholder-color: rgba(255, 255, 255, .2);
+$inspector-obj-input-background-color: rgb(51, 51, 51);
+$inspector-obj-input-border-color: #242424;
+$inspector-obj-input-shadow-color: rgba(0, 0, 0, .5);
+$inspector-obj-input-inset-shadow-color: rgba(255, 255, 255, .05);
+$inspector-obj-input-color: rgba(255, 255, 255, .9);
+$inspector-obj-input-focus-color: rgb(58, 95, 160);
+
+//  Timeline
+$timeline-background: rgb(31, 31, 31);
+
+$timeline-scenes-background: $control-scenes-background;
+$timeline-scenes-border-color: rgb(77, 77, 77);
+$timeline-scenes-group-font-color: rgba(255, 255, 255, .8);
+$timeline-scenes-scene-font-color: rgba(255, 255, 255, .8);
+
+$timeline-slide-border-radius: .2em;

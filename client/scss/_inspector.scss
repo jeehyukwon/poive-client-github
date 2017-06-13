@@ -1,0 +1,466 @@
+@import 'variables';
+
+#inspector {
+  background-color: $section-background;
+  // border: $section-border;
+  border-radius: $section-border-radius;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  margin-bottom: $section-margin;
+  margin-right: $section-margin;
+  margin-top: $section-margin - 3px;
+  overflow: hidden;
+  //transition: .15s;
+}
+.inspector-tab {
+  background-color: rgb(21, 21, 21);
+  border-bottom: $section-border;
+  display: flex;
+  height: 2.2em;
+  .inspector-tab-item {
+    border-right: $section-border;
+    cursor: pointer;
+    flex: 1;
+    font-size: .85em;
+    padding: .65em 0;
+    text-align: center;
+    i {
+      color: $inspector-tab-item-icon-color;
+      margin-right: .4em;
+    }
+    .inspector-tab-item-label {
+      color: $inspector-tab-item-label-color;
+      display: inline-block;
+      font: $poive-font;
+      font-size: 1em;
+      font-weight: 200;
+    }
+    &.active {
+      background: $inspector-tab-item-active-background;
+      i {
+        color: $inspector-tab-item-active-color;
+      }
+      .inspector-tab-item-label {
+        color: $inspector-tab-item-active-color;
+      }
+    }
+    &:last-of-type {
+      border: 0;
+    }
+  }
+}
+.inspector-main {
+  background-color: $inspector-main-background;
+  border-bottom-left-radius: $section-border-radius;
+  border-bottom-right-radius: $section-border-radius;
+  flex: 1;
+  overflow-y: scroll;
+  position: relative;
+  .inspector-preview {
+    .inspector-preview-title {
+      color: rgba(255, 255, 255, .2);
+      font: $poive-font;
+      font-size: .7em;
+      font-weight: 400;
+      margin-bottom: .5em;
+      //text-shadow: 0 .5px rgba(255, 255, 255, .1);
+      i {
+        margin-right: .5em;
+      }
+    }
+    .inspector-preview-slide {
+      border-radius: .2em;
+      overflow: hidden;
+      position: relative;
+    }
+  }
+  .inspector-main-locked {
+    background-color: $inspector-main-background;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    .inspector-main-locked-label {
+      color: rgba(255, 255, 255, .3);
+      font: $poive-font;
+      font-size: 1em;
+      font-weight: 400;
+      left: 0;
+      line-height: 150%;
+      position: absolute;
+      text-align: center;
+      //text-shadow: 0 .5px rgba(255, 255, 255, .1);
+      top: 50%;
+      transform: translate(0, -50%);
+      width: 100%;
+      i {
+        margin-right: .5em;
+      }
+      & > .title {
+        font-size: 1em;
+      }
+      & > .subtitle {
+        font-size: .8em;
+      }
+    }
+  }
+  .inspector-main-wrapper {
+    padding: .4em;
+  }
+  .inspector-main-no-wrapper {
+    color: rgba(255, 255, 255, .3);
+    font: $poive-font;
+    font-size: 1em;
+    font-weight: 400;
+    left: 0;
+    line-height: 150%;
+    position: absolute;
+    text-align: center;
+    //text-shadow: 0 .5px rgba(255, 255, 255, .1);
+    top: 50%;
+    transform: translate(0, -50%);
+    width: 100%;
+    i {
+      margin-right: .5em;
+    }
+    & > .title {
+      font-size: 1em;
+    }
+    & > .subtitle {
+      font-size: .8em;
+    }
+  }
+}
+
+$inspector-obj-select-background: rgb(51, 51, 51);
+$inspector-obj-select-border-color: rgba(0, 0, 0, .5);
+$inspector-obj-select-color: rgba(255, 255, 255, .9);
+$inspector-obj-select-icon-color: rgba(255, 255, 255, .5);
+
+.inspector-obj {
+  background-color: $inspector-obj-background;
+  // border: 1px solid $inspector-obj-border-color;
+  border-radius: .15em;
+  //box-shadow: 0 0 0 .5px $inspector-obj-border-color, 0 .5px .5px 0 $inspector-obj-shadow-color, inset 0 .1em 0 0 $inspector-obj-inset-shadow-color;
+  margin-top: .5em;
+  padding: .5em .35em 0;
+  & > .title {
+    color: $inspector-obj-title-color;
+    font: $poive-font;
+    font-size: .9em;
+    font-weight: 300;
+    margin: .15em .15em .65em;
+    padding: .1em .15em;
+    i {
+      margin-right: .4em;
+    }
+  }
+  & > .style-select {
+    background: $inspector-obj-select-background;
+    border: 0;
+    border-radius: .2em;
+    //box-shadow: 0 0 0 .5px $inspector-obj-select-border-color, inset 0 .1em 0 0 $inspector-obj-input-inset-shadow-color;
+    color: rgba(255, 255, 255, .7);
+    cursor: pointer;
+    font: $poive-font;
+    font-size: .8em;
+    height: 2.1em;
+    margin: .3em .15em .5em;
+    padding: .45em 0;
+    position: relative;
+    text-align: center;
+    &:active {
+      background: #505050;
+    }
+    i {
+      color: $inspector-obj-select-icon-color;
+      left: .8em;
+      position: absolute;
+      top: .45em;
+    }
+  }
+  & > .select {
+    padding: 0 .15em .4em;
+    position: relative;
+    i {
+      color: $inspector-obj-select-icon-color;
+      left: .6em;
+      position: absolute;
+      top: .35em;
+    }
+    select {
+      -webkit-appearance: none;
+      background: $inspector-obj-select-background;
+      border: 0;
+      border-radius: .3em;
+      //box-shadow: 0 0 0 .5px $inspector-obj-select-border-color, inset 0 .1em 0 0 $inspector-obj-input-inset-shadow-color;
+      color: $inspector-obj-select-color;
+      cursor: pointer;
+      font: $poive-font;
+      font-size: .8em;
+      height: 2.1em;
+      margin: 0;
+      padding: 0 .7em 0 2.3em;
+      width: 100%;
+      &:focus {
+        outline: none;
+      }
+    }
+    &::after {
+      color: $inspector-obj-input-placeholder-color;
+      content: '\f3d0';
+      font-family: 'Ionicons';
+      position: absolute;
+      right: .7em;
+      top: .5em;
+    }
+  }
+  & > .input {
+    padding: .15em .15em .6em;
+    position: relative;
+    i {
+      color: $inspector-obj-input-placeholder-color;
+      left: .7em;
+      position: absolute;
+      top: .7em;
+    }
+    input {
+      background-color: $inspector-obj-input-background-color;
+      border: 0;
+      border-radius: .2em;
+      //box-shadow: 0 0 0 .5px $inspector-obj-input-border-color, 0 .5px .5px 0 $inspector-obj-input-shadow-color, inset 0 .1em 0 0 $inspector-obj-input-inset-shadow-color;
+      color: $inspector-obj-input-color;
+      display: inline-block;
+      font-size: .8em;
+      height: 2.75em;
+      line-height: 100%;
+      margin: 0;
+      outline: none;
+      padding: .7em .7em .6em 2.3em;
+      resize: none;
+      transition: box-shadow .2s;
+      width: 100%;
+      &::placeholder {
+        color: $inspector-obj-input-placeholder-color;
+      }
+      &:focus {
+        box-shadow: 0 0 0 .15em $inspector-obj-input-focus-color;
+        outline: none;
+      }
+    }
+    textarea {
+      background-color: $inspector-obj-input-background-color;
+      border: 0;
+      border-radius: .2em;
+      //box-shadow: 0 0 0 .5px $inspector-obj-input-border-color, 0 .5px .5px 0 $inspector-obj-input-shadow-color, inset 0 .1em 0 0 $inspector-obj-input-inset-shadow-color;
+      color: $inspector-obj-input-color;
+      font-size: .8em;
+      height: 9em;
+      line-height: 150%;
+      margin: 0;
+      outline: none;
+      padding: .6em .7em .6em 2.3em;
+      resize: none;
+      transition: box-shadow .2s;
+      width: 100%;
+      &::placeholder {
+        color: $inspector-obj-input-placeholder-color;
+      }
+      &:focus {
+        box-shadow: 0 0 0 .15em $inspector-obj-input-focus-color;
+        outline: none;
+      }
+    }
+  }
+  & > .image {
+    padding: 0 .15em .6em;
+    .image-preview {
+      background-color: rgba(0, 0, 0, .15);
+      border-radius: .2em;
+      //margin-bottom: .6em;
+      padding: .9em .8em .6em;
+      img {
+        border-radius: .2em;
+        box-shadow: 0 0 0 .05em rgba(255, 255, 255, .02);
+        width: 100%;
+      }
+      &.empty {
+        border-radius: .2em;
+        color: rgba(255, 255, 255, .2);
+        font: $poive-font;
+        font-size: .8em;
+        //box-shadow: 0 0 0 .5px rgba(0, 0, 0, .1), inset 0 -.05em 0 0 rgba(255, 255, 255, .1), inset 0 .05em 0 0 rgba(0, 0, 0, .3);
+        height: 7em;
+        position: relative;
+      }
+    }
+    .image-button {
+      background: $inspector-obj-select-background;
+      border: 0;
+      border-radius: .3em;
+      //box-shadow: 0 0 0 .5px $inspector-obj-select-border-color, inset 0 .1em 0 0 $inspector-obj-input-inset-shadow-color;
+      color: rgba(255, 255, 255, .7);
+      cursor: pointer;
+      font: $poive-font;
+      font-size: .8em;
+      height: 2.1em;
+      margin-top: .6em;
+      padding: .45em 0;
+      position: relative;
+      text-align: center;
+      width: 100%;
+      i {
+        color: $inspector-obj-select-icon-color;
+        left: .6em;
+        position: absolute;
+        top: .5em;
+        &.ion-android-share {
+          left: auto;
+          right: .6em;
+        }
+      }
+      &.delete {
+        background: rgb(164, 56, 56);
+        padding-left: 0;
+        padding-right: 0;
+        text-align: center;
+        &:active {
+          background: rgb(144, 36, 36);
+        }
+      }
+      &:active {
+        background: #505050;
+      }
+    }
+  }
+}
+
+.inspector-scene-template-select {
+  margin-top: .4em;
+  position: relative;
+  & > .title {
+    color: rgba(255, 255, 255, .7);
+    font: caption;
+    font-size: .9em;
+    left: .7em;
+    position: absolute;
+    top: .7em;
+    i {
+      margin-right: .4em;
+    }
+  }
+  & > select {
+    -webkit-appearance: none;
+    background-color: $inspector-obj-background;
+    //background-color: #3a824c;
+    border: 0;
+    border-radius: .2em;
+    //box-shadow: 0 0 0 .5px rgba(0, 0, 0, .4), 0 .1em .5px 0 rgba(0, 0, 0, .3), inset 0 .1em 0 0 rgba(255, 255, 255, .1);
+    color: rgba(255, 255, 255, .5);
+    cursor: pointer;
+    font-size: .9em;
+    height: 2.5em;
+    padding: 0 2em 0 0;
+    text-align-last: right;
+    width: 100%;
+    &:focus {
+      outline: none;
+    }
+  }
+  &::after {
+    color: rgba(255, 255, 255, .5);
+    content: '\f3d0';
+    font-family: 'Ionicons';
+    position: absolute;
+    right: .7em;
+    top: .7em;
+  }
+}
+
+.inspector-slide-layout-select {
+  margin-top: .4em;
+  position: relative;
+  & > .title {
+    color: rgba(255, 255, 255, .7);
+    font: caption;
+    font-size: .9em;
+    left: .7em;
+    position: absolute;
+    top: .7em;
+    i {
+      margin-right: .4em;
+    }
+  }
+  & > select {
+    -webkit-appearance: none;
+    background-color: $inspector-obj-background;
+    border: 0;
+    border-radius: .2em;
+    //box-shadow: 0 0 0 .5px rgba(0, 0, 0, .4), 0 .1em .5px 0 rgba(0, 0, 0, .3), inset 0 .1em 0 0 rgba(255, 255, 255, .1);
+    color: rgba(255, 255, 255, .5);
+    cursor: pointer;
+    font-size: .9em;
+    height: 2.5em;
+    padding: 0 2em 0 0;
+    text-align-last: right;
+    width: 100%;
+    &:focus {
+      outline: none;
+    }
+  }
+  &::after {
+    color: rgba(255, 255, 255, .5);
+    content: '\f3d0';
+    font-family: 'Ionicons';
+    position: absolute;
+    right: .7em;
+    top: .7em;
+  }
+}
+
+.inspector-slide-is-scene-obj {
+  background-color: $inspector-obj-background;
+  // border: 1px solid $inspector-obj-border-color;
+  border-radius: .15em;
+  //box-shadow: 0 0 0 .5px $inspector-obj-border-color, 0 .1em .5px 0 rgba(0, 0, 0, .3), inset 0 .1em 0 0 rgba(255, 255, 255, .05);
+  cursor: pointer;
+  height: 2.25em;
+  margin-top: .5em;
+  position: relative;
+  &:active {
+    background-color: rgb(35, 35, 35);
+  }
+  &.on {
+    &::after {
+      content: '\f122';
+    }
+  }
+  & > .title {
+    color: rgba(255, 255, 255, .7);
+    font: caption;
+    font-size: .9em;
+    left: .7em;
+    position: absolute;
+    top: .7em;
+    i {
+      margin-right: .4em;
+    }
+  }
+  &::after {
+    border-radius: 2em;
+    box-shadow: 0 0 0 .1em rgba(255, 255, 255, .1);
+    color: rgba(255, 255, 255, .6);
+    content: '';
+    font-family: 'Ionicons';
+    font-size: .85em;
+    height: 1em;
+    padding: .2em .2em .25em .3em;
+    position: absolute;
+    right: .6em;
+    top: .65em;
+    width: 1em;
+  }
+}

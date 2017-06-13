@@ -1,0 +1,264 @@
+{
+  "en": {
+    "top": {
+      "file": {
+        "untitled": "Untitled",
+        "new": "New Sheet",
+        "open": "Open...",
+        "save": "Save",
+        "saveAs": "Save As..."
+      },
+      "menuset": {
+        "cloud": "Cloud",
+        "inspector": "Inspector",
+        "timeline": "Timeline",
+        "settings": "Settings"
+      }
+    },
+    "control": {
+      "top": {
+        "filter": "Filter...",
+        "groupAndScene": "Groups And Scenes",
+        "upload": "Upload to Cloud",
+        "lock": "Lock"
+      },
+      "sheet": {
+        "newGroup": "New Group",
+        "newScene": "New Scene",
+        "addGroup": "Insert a new Group",
+        "addScene": "Insert a new Scene",
+        "addSlide": "Insert a new Slide",
+        "editMarkdown": "Edit with Markdown",
+        "upload": "Upload to Cloud",
+        "deleteGroup": "Delete the group",
+        "deleteScene": "Delete the scene",
+        "deleteSlide": "Delete the slide",
+        "play": "Play",
+        "copy": "Copy",
+        "cut": "Cut",
+        "paste": "Paste"
+      },
+      "markdown": {
+        "headerLabelBefore": "Edit '",
+        "headerLabelAfter": "' with a Markdown Editor",
+        "preview": "Preview",
+        "previewCaption" : "You can preview it by filling out the contents below.",
+        "edit": "Edit",
+        "commonLayout": "Common layout",
+        "markdownPlaceholder": "Write it here\n---\nThis leads to the next object\n===\nThis goes on to the next slide",
+        "markdownCaption": "Separate with --- to move to the next object, and === to move to the next slide",
+        "close": "Close",
+        "insertSlide": "Insert a slide at the bottom of the scene",
+        "save": "Save and close"
+      }
+    },
+    "inspector": {
+      "scene": {
+        "tabLabel": "Scene",
+        "preview": "Preview",
+        "template": "Scene Template"
+      },
+      "slide": {
+        "tabLabel": "Slide",
+        "preview": "Preview",
+        "layout": "Slide Layout",
+        "isSceneObj": "Include Scene Objects"
+      },
+      "locked": {
+        "title": "Sheet is Locked",
+        "subtitle": "If you want to edit, please unlock your sheet first."
+      },
+      "noSlide": {
+        "title": "No slides selected",
+        "subtitle": "Please select a slide to edit"
+      },
+      "noScene": {
+        "title": "No scenes selected",
+        "subtitle": "Please select a scene to edit"
+      },
+      "obj": {
+        "type": {
+          "oneLine": "One Line Input",
+          "multiLine": "Multi Line Input",
+          "sceneTitle": "Scene Title",
+          "pageNumber": "Page Number",
+          "continueIcon": "Continue / End Icon"
+        },
+        "altStyle": {
+          "styleA": "Style A",
+          "styleB": "Style B"
+        },
+        "img": {
+          "addImage": "Add Image",
+          "blankImageCaption" : "Please add an image",
+          "changeImage": "Change Image",
+          "deleteImage": "Delete Image"
+        }
+      }
+    },
+    "cloud": {
+      "cloud": {
+        "tabLabel": "Cloud"
+      },
+      "market": {
+        "tabLabel": "Market"
+      },
+      "comingSoon": {
+        "title": "Coming soon",
+        "subtitle": "Sorry. Not yet."
+      }
+    },
+    "settings": {
+      "headerLabel": "Settings",
+      "interface": {
+        "titleLabel": "Interface",
+        "language": "Language",
+        "zoom": "Zoom"
+      },
+      "io": {
+        "titleLabel": "I/O",
+        "outputDisplay": "Output Display",
+        "display": "Display"
+      },
+      "templates": {
+        "titleLabel": "Currently installed template",
+        "isDefault": "is Default",
+        "setAsDefault": "Set as Default",
+        "delete": "Delete",
+        "install": "Install a Template from .json"
+      },
+      "close": "Apply and close"
+    }
+  },
+  "ko": {
+    "top": {
+      "file": {
+        "untitled": "무제",
+        "new": "새 시트",
+        "open": "열기...",
+        "save": "저장",
+        "saveAs": "다른 이름으로 저장..."
+      },
+      "menuset": {
+        "cloud": "클라우드",
+        "inspector": "속성",
+        "timeline": "타임라인",
+        "settings": "설정"
+      }
+    },
+    "control": {
+      "top": {
+        "filter": "필터...",
+        "groupAndScene": "그룹 및 씬",
+        "upload": "클라우드에 업로드",
+        "lock": "시트 잠금"
+      },
+      "sheet": {
+        "newGroup": "새 그룹",
+        "newScene": "새 씬",
+        "addGroup": "새 그룹 추가",
+        "addScene": "새 씬 추가",
+        "addSlide": "새 슬라이드 추가",
+        "editMarkdown": "마크다운 수정",
+        "upload": "클라우드에 업로드",
+        "deleteGroup": "그룹 삭제",
+        "deleteScene": "씬 삭제",
+        "deleteSlide": "슬라이드 삭제",
+        "play": "재생",
+        "copy": "복사",
+        "cut": "잘라내기",
+        "paste": "붙여넣기"
+      },
+      "markdown": {
+        "headerLabelBefore": "'",
+        "headerLabelAfter": "' 마크다운 수정",
+        "preview": "미리보기",
+        "previewCaption" : "아래에 내용을 작성하시면 미리 볼 수 있습니다",
+        "edit": "편집",
+        "commonLayout": "공통 레이아웃 설정",
+        "markdownPlaceholder": "여기에 내용을 작성하세요.\n---\n이렇게 다음 객체로 넘어갑니다.\n===\n이렇게 다음 슬라이드로 넘어갑니다.",
+        "markdownCaption": "다음 객체로 넘어가려면 ---, 다음 슬라이드로 넘어가려면 ===로 구분하세요",
+        "close": "닫기",
+        "insertSlide": "씬 끝에 슬라이드 삽입",
+        "save": "저장 후 닫기"
+      }
+    },
+    "inspector": {
+      "scene": {
+        "tabLabel": "씬",
+        "preview": "미리보기",
+        "template": "씬 템플릿"
+      },
+      "slide": {
+        "tabLabel": "슬라이드",
+        "preview": "미리보기",
+        "layout": "슬라이드 레이아웃",
+        "isSceneObj": "씬 오브젝트 포함"
+      },
+      "locked": {
+        "title": "시트가 잠겨있습니다",
+        "subtitle": "수정을 원하시면 먼저 시트 잠금을 해제하세요"
+      },
+      "noSlide": {
+        "title": "선택된 슬라이드가 없습니다",
+        "subtitle": "수정 할 슬라이드를 선택해주세요"
+      },
+      "noScene": {
+        "title": "선택된 씬이 없습니다",
+        "subtitle": "수정 할 씬을 선택해주세요"
+      },
+      "obj": {
+        "type": {
+          "oneLine": "한 줄 입력",
+          "multiLine": "여러 줄 입력",
+          "sceneTitle": "씬 이름",
+          "pageNumber": "페이지 번호",
+          "continueIcon": "계속 / 마지막 아이콘"
+        },
+        "altStyle": {
+          "styleA": "스타일 A",
+          "styleB": "스타일 B"
+        },
+        "img": {
+          "addImage": "이미지 추가",
+          "blankImageCaption" : "이미지를 추가해주세요",
+          "changeImage": "이미지 변경",
+          "deleteImage": "이미지 삭제"
+        }
+      }
+    },
+    "cloud": {
+      "cloud": {
+        "tabLabel": "클라우드"
+      },
+      "market": {
+        "tabLabel": "마켓"
+      },
+      "comingSoon": {
+        "title": "준비중입니다",
+        "subtitle": "아직이에요!"
+      }
+    },
+    "settings": {
+      "headerLabel": "설정",
+      "interface": {
+        "titleLabel": "인터페이스",
+        "language": "언어",
+        "zoom": "화면 확대"
+      },
+      "io": {
+        "titleLabel": "입출력",
+        "outputDisplay": "출력 디스플레이",
+        "display": "디스플레이"
+      },
+      "templates": {
+        "titleLabel": "현재 설치된 템플릿",
+        "isDefault": "현재 기본 템플릿",
+        "setAsDefault": "기본으로 설정",
+        "delete": "삭제",
+        "install": ".json 파일로 새 템플릿 설치"
+      },
+      "close": "적용 및 닫기"
+    }
+  }
+}

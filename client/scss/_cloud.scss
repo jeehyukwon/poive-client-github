@@ -1,0 +1,93 @@
+@import 'variables';
+
+#cloud {
+  background-color: $section-background;
+  // border: $section-border;
+  border-radius: $section-border-radius;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  margin-bottom: $section-margin;
+  margin-left: $section-margin;
+  margin-top: $section-margin - 3px;
+  overflow: hidden;
+}
+
+.cloud-tab {
+  background-color: rgb(21, 21, 21);
+  border-bottom: $section-border;
+  display: flex;
+  height: 2.2em;
+  .cloud-tab-item {
+    border-right: $section-border;
+    cursor: pointer;
+    flex: 1;
+    font-size: .85em;
+    padding: .65em 0;
+    text-align: center;
+    i {
+      color: $inspector-tab-item-icon-color;
+      margin-right: .4em;
+    }
+    .cloud-tab-item-label {
+      color: $inspector-tab-item-label-color;
+      display: inline-block;
+      font: $poive-font;
+      font-size: 1em;
+      font-weight: 200;
+    }
+    &.active {
+      background: $inspector-tab-item-active-background;
+      i {
+        color: $inspector-tab-item-active-color;
+      }
+      .cloud-tab-item-label {
+        color: $inspector-tab-item-active-color;
+      }
+    }
+    &:last-of-type {
+      border: 0;
+    }
+  }
+}
+
+.cloud-main {
+  background-color: $inspector-main-background;
+  border-bottom-left-radius: $section-border-radius;
+  border-bottom-right-radius: $section-border-radius;
+  flex: 1;
+  overflow-y: scroll;
+  position: relative;
+  .cloud-main-locked {
+    background-color: $inspector-main-background;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    .cloud-main-locked-label {
+      color: rgba(255, 255, 255, .3);
+      font: $poive-font;
+      font-size: 1em;
+      font-weight: 400;
+      left: 0;
+      line-height: 150%;
+      position: absolute;
+      text-align: center;
+      //text-shadow: 0 .5px rgba(255, 255, 255, .1);
+      top: 50%;
+      transform: translate(0, -50%);
+      width: 100%;
+      i {
+        margin-right: .5em;
+      }
+      & > .title {
+        font-size: 1em;
+      }
+      & > .subtitle {
+        font-size: .8em;
+      }
+    }
+  }
+}

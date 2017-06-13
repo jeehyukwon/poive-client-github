@@ -1,0 +1,75 @@
+@import 'variables';
+
+.popup-window-group-box {
+  &.slides {
+    height: 9em;
+    overflow-x: scroll;
+    padding: .5em !important;
+    position: relative;
+    .slides {
+      height: 7.5em;
+      padding: 0;
+      white-space: nowrap;
+      .slide {
+        border-radius: .2em;
+        display: inline-block;
+        height: 7.5em;
+        margin-right: .5em;
+        overflow: hidden;
+        width: 10em;
+      }
+      .no-slide {
+        color: rgba(50, 50, 50, 1);
+        font: $poive-font;
+        font-size: .8em;
+        font-weight: 200;
+        left: 50%;
+        position: absolute;
+        text-shadow: 0 -1px rgba(0, 0, 0, .3);
+        top: 50%;
+        transform: translate(-50%, -50%);
+        i {
+          margin-right: .5em;
+        }
+      }
+    }
+  }
+}
+
+.popup-window-group-box-entry-textarea {
+  margin-top: .8em;
+  position: relative;
+  & > textarea {
+    background-color: rgb(35, 35, 35);
+    border: 0;
+    border-radius: .2em;
+    // box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, .1), inset 0 -1px 0 0 rgba(0, 0, 0, .5), 0 0 0 0 rgba(0, 0, 0, 0);
+    color: $inspector-obj-input-color;
+    font-size: .8em;
+    height: 17em;
+    line-height: 150%;
+    margin: 0;
+    outline: none;
+    padding: .6em .7em;
+    resize: none;
+    transition: box-shadow .2s;
+    width: 100%;
+    &::placeholder {
+      color: $inspector-obj-input-placeholder-color;
+    }
+    &:focus {
+      box-shadow: 0 0 0 .15em $inspector-obj-input-focus-color;
+      outline: none;
+    }
+  }
+  & > .caption {
+    color: rgba(255, 255, 255, .2);
+    font: $poive-font;
+    font-size: .6em;
+    padding-left: .5em;
+    padding-top: .4em;
+    i {
+      margin-right: .4em;
+    }
+  }
+}

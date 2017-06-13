@@ -1,0 +1,125 @@
+@import 'variables';
+
+#timeline {
+  background-color: $timeline-background;
+  // border: $section-border;
+  border-radius: $section-border-radius;
+  margin: 0 $section-margin $section-margin;
+  transition: .15s;
+  &:focus {
+    box-shadow: 0 0 0 2px $section-focus-outline-color;
+    outline: none;
+  }
+  .timeline-wrapper {
+    display: flex;
+    height: 12.4em;
+    overflow-x: scroll;
+    ul,
+    li {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+    & > .groups {
+      display: inline-block;
+      flex: 1;
+      vertical-align: top;
+      white-space: nowrap;
+      .group {
+        display: inline-block;
+        vertical-align: top;
+        .group-title {
+          color: $timeline-scenes-group-font-color;
+          font: $poive-font;
+          font-size: .7em;
+          font-weight: 200;
+          padding: .6em;
+          i {
+            margin-right: .4em;
+          }
+        }
+        .scenes {
+          .scene {
+            display: inline-block;
+            vertical-align: top;
+            &.selected {
+              .scene-title {
+                background: $control-scenes-scene-active-background;
+              }
+            }
+            .scene-title {
+              background-color: $timeline-scenes-background;
+              border-radius: .2em;
+              color: $timeline-scenes-scene-font-color;
+              font: $poive-font;
+              font-size: .75em;
+              font-weight: 200;
+              margin: .2em .4em .4em;
+              padding: .4em .8em;
+              i {
+                margin-right: .4em;
+              }
+            }
+            .slides {
+              .slide-timeline {
+                border-radius: $control-slides-slide-border-radius;
+                cursor: pointer;
+                display: inline-block;
+                height: 100%;
+                margin: .3em .3em 0;
+                position: relative;
+                transition: box-shadow .3s;
+                &.selected {
+                  box-shadow: 0 .1em .2em 0 rgba(0, 0, 0, .3);
+                  .slide-info {
+                    background-color: rgb(81, 81, 81);
+                  }
+                }
+                &.playing {
+                  transition: none;
+                  .slide-info {
+                    .slide-info-play-button {
+                      color: $control-play-color;
+                      &:hover {color: $control-play-color;}
+                    }
+                  }
+                  &.now-playing {
+                    box-shadow: 0 0 0 1.5px $control-play-color;
+                  }
+                }
+                .slide-info {
+                  background-color: rgb(51, 51, 51);
+                  border-bottom-left-radius: $control-slides-slide-border-radius;
+                  border-top-left-radius: $control-slides-slide-border-radius;
+                  //box-shadow: inset 0 1.5px 0 0 rgba(255, 255, 255, .1), inset 0 -1.5px 0 0 rgba(0, 0, 0, .05);
+                  display: inline-block;
+                  height: 7.5em;
+                  vertical-align: top;
+                  width: 1.5em;
+                  .slide-info-play-button {
+                    color: rgba(255, 255, 255, .5);
+                    padding: .3em .45em;
+                    &:hover {
+                      color: rgba(255, 255, 255, .7);
+                    }
+                  }
+                }
+                .slide-box {
+                  border-bottom-right-radius: $control-slides-slide-border-radius;
+                  border-top-right-radius: $control-slides-slide-border-radius;
+                  box-shadow: inset 0 .1em 0 0 rgba(255, 255, 255, .1);
+                  display: inline-block;
+                  //height: 7.5em;
+                  overflow: hidden;
+                  position: relative;
+                  vertical-align: top;
+                  width: 10em;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

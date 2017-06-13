@@ -1,0 +1,681 @@
+{
+    "title": {
+        "en": "WWDC Style"
+    },
+    "author": "Team Poive",
+    "abbr": "wwdc",
+    "sceneStyle": {
+        "backgroundColor": "#000"
+    },
+    "sceneObj": [
+        {
+            "title": {
+                "ko": "제목",
+                "en": "Title"
+            },
+            "typeSelectable": "text",
+            "type": "sceneTitle",
+            "editable": true,
+            "text": "",
+            "style": {
+                "top": "1.7em",
+                "left": "2em",
+                "color": "#fff",
+                "text": {
+                  "fontSize": "2em",
+                  "fontWeight": "300",
+                  "letterSpacing": ".02em"
+                }
+            }
+        },
+        {
+            "title": {
+                "ko": "부제목",
+                "en": "Subtitle"
+            },
+            "typeSelectable": "text",
+            "type": "oneLine",
+            "editable": true,
+            "text": "",
+            "style": {
+                "top": "4.7em",
+                "left": "2em",
+                "color": "rgb(142, 142, 142)",
+                "text": {
+                  "fontSize": "1.5em",
+                  "fontWeight": "300",
+                  "letterSpacing": ".02em"
+                }
+            }
+        },
+        {
+            "title": {
+                "ko": "꼬리말 1",
+                "en": "Footer 1"
+            },
+            "typeSelectable": "text",
+            "type": "oneLine",
+            "editable": true,
+            "text": "",
+            "style": {
+                "bottom": "2em",
+                "left": "2em",
+                "color": "rgba(255,255,255,.4)"
+            }
+        },
+        {
+            "title": {
+                "ko": "꼬리말 2",
+                "en": "Footer 2"
+            },
+            "typeSelectable": "text",
+            "type": "pageNumber",
+            "editable": true,
+            "text": "",
+            "style": {
+                "bottom": "2em",
+                "right": "2em",
+                "color": "rgba(255,255,255,.4)"
+            }
+        }
+    ],
+    "defaultSlideLayout": "2",
+    "slideLayout": [
+        {
+            "title": {
+                "ko": "커버",
+                "en": "Cover"
+            },
+            "obj": [
+                {
+                    "title": {
+                        "ko": "머리말 1",
+                        "en": "Header 1"
+                    },
+                    "typeSelectable": "text",
+                    "type": "oneLine",
+                    "editable": true,
+                    "text": "머리말 1",
+                    "style": {
+                        "top": "1em",
+                        "left": "2em",
+                        "color": "rgb(91, 167, 84)",
+                        "text": {
+                          "fontSize": "1em",
+                          "fontWeight": "300",
+                          "letterSpacing": ".02em"
+                        }
+                    }
+                },
+                {
+                    "title": {
+                        "ko": "머리말 2",
+                        "en": "Header 2"
+                    },
+                    "typeSelectable": "text",
+                    "type": "oneLine",
+                    "editable": true,
+                    "text": "머리말 2",
+                    "style": {
+                        "top": "1em",
+                        "right": "2em",
+                        "color": "rgb(142, 142, 142)",
+                        "text": {
+                          "fontSize": "1em",
+                          "fontWeight": "300",
+                          "letterSpacing": ".02em"
+                        }
+                    }
+                },
+                {
+                    "title": {
+                        "ko": "제목",
+                        "en": "Title"
+                    },
+                    "typeSelectable": false,
+                    "type": "oneLine",
+                    "editable": true,
+                    "text": "제목",
+                    "style": {
+                        "top": "7.6em",
+                        "left": "2em",
+                        "color": "rgb(91, 167, 84)",
+                        "text": {
+                          "fontSize": "2.3em",
+                          "fontWeight": "300",
+                          "letterSpacing": ".02em"
+                        }
+                    }
+                },
+                {
+                    "title": {
+                        "ko": "소제목 1",
+                        "en": "Subtitle 1"
+                    },
+                    "typeSelectable": false,
+                    "type": "oneLine",
+                    "editable": true,
+                    "text": "소제목 1",
+                    "style": {
+                        "top": "10.8em",
+                        "left": "2em",
+                        "color": "rgb(142, 142, 142)",
+                        "text": {
+                          "fontSize": "1.5em",
+                          "fontWeight": "300",
+                          "letterSpacing": ".02em"
+                        }
+                    }
+                },
+                {
+                    "title": {
+                        "ko": "소제목 2",
+                        "en": "Subtitle 2"
+                    },
+                    "typeSelectable": false,
+                    "type": "oneLine",
+                    "editable": true,
+                    "text": "소제목 2",
+                    "style": {
+                        "top": "13.4em",
+                        "left": "2em",
+                        "color": "rgb(142, 142, 142)",
+                        "text": {
+                          "fontSize": "1.1em",
+                          "fontWeight": "300",
+                          "letterSpacing": ".02em"
+                        }
+                    }
+                },
+                {
+                    "title": {
+                        "ko": "캡션 1",
+                        "en": "Caption 1"
+                    },
+                    "typeSelectable": "text",
+                    "type": "multiLine",
+                    "editable": true,
+                    "text": "캡션 1",
+                    "style": {
+                        "top": "19.3em",
+                        "left": "2em",
+                        "color": "rgb(142, 142, 142)",
+                        "text": {
+                          "fontSize": ".95em",
+                          "fontWeight": "300",
+                          "lineHeight": "160%"
+                        }
+                    }
+                },
+                {
+                    "title": {
+                        "ko": "캡션 2",
+                        "en": "Caption 2"
+                    },
+                    "typeSelectable": "text",
+                    "type": "multiLine",
+                    "editable": true,
+                    "text": "캡션 2",
+                    "style": {
+                        "bottom": ".8em",
+                        "left": "2.2em",
+                        "color": "rgba(255,255,255,.6)",
+                        "text": {
+                            "fontSize": ".4em",
+                            "lineHeight": "180%"
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "title": {
+                "ko": "목차",
+                "en": "Index"
+            },
+            "obj": [
+                {
+                    "title": {
+                        "ko": "목차 1",
+                        "en": "Index 1"
+                    },
+                    "type": "oneLine",
+                    "typeSelectable": false,
+                    "text": "목차 1",
+                    "editable": true,
+                    "styleSelectable": true,
+                    "isAltStyle": true,
+                    "style": {
+                        "top": "8.7em",
+                        "left": "50%",
+                        "color": "rgba(255, 255, 255, .2)",
+                        "borderBottom": ".05em solid rgba(255, 255, 255, .1)",
+                        "transform": "translateX(-50%)",
+                        "width": "24em",
+                        "height": "2.8em",
+                        "textAlign": "center",
+                        "text": {
+                          "fontSize": "1.2em",
+                          "fontWeight": "300",
+                          "letterSpacing": ".02em",
+                          "lineHeight": "180%"
+                        }
+                    },
+                    "altStyle": {
+                        "top": "8.7em",
+                        "left": "50%",
+                        "color": "white",
+                        "borderBottom": ".05em solid rgba(255, 255, 255, .1)",
+                        "transform": "translateX(-50%)",
+                        "width": "24em",
+                        "height": "2.8em",
+                        "textAlign": "center",
+                        "text": {
+                          "fontSize": "1.2em",
+                          "fontWeight": "300",
+                          "letterSpacing": ".02em",
+                          "lineHeight": "180%"
+                        }
+                    }
+                },
+                {
+                    "title": {
+                        "ko": "목차 2",
+                        "en": "Index 2"
+                    },
+                    "typeSelectable": false,
+                    "type": "oneLine",
+                    "editable": true,
+                    "text": "목차 2",
+                    "styleSelectable": true,
+                    "isAltStyle": false,
+                    "style": {
+                        "top": "12.1em",
+                        "left": "50%",
+                        "color": "rgba(255, 255, 255, .2)",
+                        "borderBottom": ".05em solid rgba(255, 255, 255, .1)",
+                        "transform": "translateX(-50%)",
+                        "width": "24em",
+                        "height": "2.8em",
+                        "textAlign": "center",
+                        "text": {
+                          "fontSize": "1.2em",
+                          "fontWeight": "300",
+                          "letterSpacing": ".02em",
+                          "lineHeight": "180%"
+                        }
+                    },
+                    "altStyle": {
+                        "top": "12.1em",
+                        "left": "50%",
+                        "color": "white",
+                        "borderBottom": ".05em solid rgba(255, 255, 255, .1)",
+                        "transform": "translateX(-50%)",
+                        "width": "24em",
+                        "height": "2.8em",
+                        "textAlign": "center",
+                        "text": {
+                          "fontSize": "1.2em",
+                          "fontWeight": "300",
+                          "letterSpacing": ".02em",
+                          "lineHeight": "180%"
+                        }
+                    }
+                },
+                {
+                    "title": {
+                        "ko": "목차 3",
+                        "en": "Index 3"
+                    },
+                    "typeSelectable": false,
+                    "type": "oneLine",
+                    "editable": true,
+                    "text": "목차 3",
+                    "styleSelectable": true,
+                    "isAltStyle": false,
+                    "style": {
+                        "top": "15.5em",
+                        "left": "50%",
+                        "color": "rgba(255, 255, 255, .2)",
+                        "borderBottom": ".05em solid rgba(255, 255, 255, .1)",
+                        "transform": "translateX(-50%)",
+                        "width": "24em",
+                        "height": "2.8em",
+                        "textAlign": "center",
+                        "text": {
+                          "fontSize": "1.2em",
+                          "fontWeight": "300",
+                          "letterSpacing": ".02em",
+                          "lineHeight": "180%"
+                        }
+                    },
+                    "altStyle": {
+                        "top": "15.5em",
+                        "left": "50%",
+                        "color": "white",
+                        "borderBottom": ".05em solid rgba(255, 255, 255, .1)",
+                        "transform": "translateX(-50%)",
+                        "width": "24em",
+                        "height": "2.8em",
+                        "textAlign": "center",
+                        "text": {
+                          "fontSize": "1.2em",
+                          "fontWeight": "300",
+                          "letterSpacing": ".02em",
+                          "lineHeight": "180%"
+                        }
+                    }
+                },
+                {
+                    "title": {
+                        "ko": "목차 4",
+                        "en": "Index 4"
+                    },
+                    "typeSelectable": false,
+                    "type": "oneLine",
+                    "editable": true,
+                    "text": "목차 4",
+                    "styleSelectable": true,
+                    "isAltStyle": false,
+                    "style": {
+                        "top": "18.9em",
+                        "left": "50%",
+                        "color": "rgba(255, 255, 255, .2)",
+                        "transform": "translateX(-50%)",
+                        "width": "24em",
+                        "height": "2.8em",
+                        "textAlign": "center",
+                        "text": {
+                          "fontSize": "1.2em",
+                          "fontWeight": "300",
+                          "letterSpacing": ".02em",
+                          "lineHeight": "180%"
+                        }
+                    },
+                    "altStyle": {
+                        "top": "18.9em",
+                        "left": "50%",
+                        "color": "white",
+                        "transform": "translateX(-50%)",
+                        "width": "24em",
+                        "height": "2.8em",
+                        "textAlign": "center",
+                        "text": {
+                          "fontSize": "1.2em",
+                          "fontWeight": "300",
+                          "letterSpacing": ".02em",
+                          "lineHeight": "180%"
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "title": {
+                "ko": "텍스트",
+                "en": "Text"
+            },
+            "obj": [
+                {
+                    "title": {
+                        "ko": "내용",
+                        "en": "Content"
+                    },
+                    "typeSelectable": "text",
+                    "type": "multiLine",
+                    "editable": true,
+                    "text": "텍스트 내용을 입력하세요",
+                    "style": {
+                        "top": "8em",
+                        "left": "2em",
+                        "color": "#fff",
+                        "text": {
+                          "fontSize": "1em",
+                          "fontWeight": "300",
+                          "letterSpacing": ".02em",
+                          "lineHeight": "180%"
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "title": {
+                "ko": "큰 이미지",
+                "en": "Big Image"
+            },
+            "obj": [
+                {
+                    "title": {
+                        "ko": "이미지",
+                        "en": "Image"
+                    },
+                    "typeSelectable": false,
+                    "type": "image",
+                    "editable": true,
+                    "style": {
+                        "width": "100%",
+                        "maxHeight": "100%",
+                        "top": "50%",
+                        "transform": "translateY(-50%)",
+                        "textAlign": "center",
+                        "img": {
+                            "maxWidth": "100%",
+                            "maxHeight": "100%"
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "title": {
+                "ko": "중앙 이미지",
+                "en": "Center Image"
+            },
+            "obj": [
+                {
+                    "title": {
+                        "ko": "이미지",
+                        "en": "Image"
+                    },
+                    "typeSelectable": false,
+                    "type": "image",
+                    "editable": true,
+                    "style": {
+                        "width": "90%",
+                        "height": "70%",
+                        "top": "25%",
+                        "left": "5%",
+                        "textAlign": "center",
+                        "img": {
+                            "maxWidth": "100%",
+                            "maxHeight": "100%"
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "title": {
+                "ko": "중앙 큰 텍스트",
+                "en": "Center Big Text"
+            },
+            "obj": [
+                {
+                    "title": {
+                        "ko": "내용",
+                        "en": "Content"
+                    },
+                    "typeSelectable": "text",
+                    "type": "multiLine",
+                    "editable": true,
+                    "text": "텍스트 내용을 입력하세요",
+                    "style": {
+                        "top": "13em",
+                        "color": "#fff",
+                        "width": "100%",
+                        "textAlign": "center",
+                        "text": {
+                          "fontSize": "1.7em",
+                          "fontWeight": "300",
+                          "letterSpacing": ".02em",
+                          "lineHeight": "180%"
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "title": {
+                "ko": "중앙 큰 텍스트와 캡션",
+                "en": "Center Big Text with caption"
+            },
+            "obj": [
+                {
+                    "title": {
+                        "ko": "내용",
+                        "en": "Content"
+                    },
+                    "typeSelectable": "text",
+                    "type": "multiLine",
+                    "editable": true,
+                    "text": "텍스트 내용을 입력하세요",
+                    "style": {
+                        "top": "12.3em",
+                        "color": "#fff",
+                        "width": "100%",
+                        "textAlign": "center",
+                        "text": {
+                          "fontSize": "1.7em",
+                          "fontWeight": "300",
+                          "letterSpacing": ".02em",
+                          "lineHeight": "180%"
+                        }
+                    }
+                },
+                {
+                    "title": {
+                        "ko": "캡션",
+                        "en": "Caption"
+                    },
+                    "typeSelectable": "text",
+                    "type": "multiLine",
+                    "editable": true,
+                    "text": "텍스트 내용을 입력하세요",
+                    "style": {
+                        "top": "15.3em",
+                        "color": "#fff",
+                        "width": "100%",
+                        "textAlign": "center",
+                        "text": {
+                          "fontSize": "1em",
+                          "fontWeight": "300",
+                          "letterSpacing": ".02em",
+                          "lineHeight": "180%"
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "title": {
+                "ko": "좌측 이미지와 텍스트",
+                "en": "Left Image and Text"
+            },
+            "obj": [
+                {
+                    "title": {
+                        "ko": "이미지",
+                        "en": "Image"
+                    },
+                    "typeSelectable": false,
+                    "type": "image",
+                    "editable": true,
+                    "style": {
+                        "width": "55%",
+                        "height": "55%",
+                        "top": "28%",
+                        "left": "0",
+                        "textAlign": "center",
+                        "img": {
+                            "maxWidth": "100%",
+                            "maxHeight": "100%"
+                        }
+                    }
+                },
+                {
+                    "title": {
+                        "ko": "텍스트",
+                        "en": "Text"
+                    },
+                    "typeSelectable": "text",
+                    "type": "multiLine",
+                    "editable": true,
+                    "text": "텍스트 내용을 입력하세요",
+                    "style": {
+                        "top": "28%",
+                        "left": "60%",
+                        "color": "#fff",
+                        "width": "40%",
+                        "text": {
+                          "fontSize": "1.2em",
+                          "fontWeight": "300",
+                          "letterSpacing": ".02em",
+                          "lineHeight": "180%"
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "title": {
+                "ko": "우측 이미지와 텍스트",
+                "en": "Right Image and Text"
+            },
+            "obj": [
+                {
+                    "title": {
+                        "ko": "이미지",
+                        "en": "Image"
+                    },
+                    "typeSelectable": false,
+                    "type": "image",
+                    "editable": true,
+                    "style": {
+                        "width": "55%",
+                        "height": "55%",
+                        "top": "28%",
+                        "left": "45%",
+                        "textAlign": "center",
+                        "img": {
+                            "maxWidth": "100%",
+                            "maxHeight": "100%"
+                        }
+                    }
+                },
+                {
+                    "title": {
+                        "ko": "텍스트",
+                        "en": "Text"
+                    },
+                    "typeSelectable": "text",
+                    "type": "multiLine",
+                    "editable": true,
+                    "text": "텍스트 내용을 입력하세요",
+                    "style": {
+                        "top": "28%",
+                        "left": "5%",
+                        "color": "#fff",
+                        "width": "40%",
+                        "text": {
+                          "fontSize": "1.2em",
+                          "fontWeight": "300",
+                          "letterSpacing": ".02em",
+                          "lineHeight": "180%"
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}

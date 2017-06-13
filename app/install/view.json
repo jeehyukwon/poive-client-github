@@ -1,0 +1,11 @@
+{
+  "app": true,
+  "menuset": true,
+  "inspector": true,
+  "inspectorTab": 0,
+  "timeline": false,
+  "cloud": false,
+  "cloudTab": 0,
+  "controlScenes": true,
+  "sheetLock": false
+}
