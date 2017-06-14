@@ -127,7 +127,8 @@
         "delete": "Delete",
         "install": "Install a Template from .json"
       },
-      "close": "Apply and close"
+      "close": "Apply and close",
+      "license": "Open-source Licenses"
     }
   },
   "ko": {
@@ -258,7 +259,8 @@
         "delete": "삭제",
         "install": ".json 파일로 새 템플릿 설치"
       },
-      "close": "적용 및 닫기"
+      "close": "적용 및 닫기",
+      "license": "오픈소스 라이센스"
     }
   }
 }

@@ -80,6 +80,9 @@
               i.ion-social-apple
               |macOS - 1.3
     div(slot="footer")
+      .popup-window-footer-button
+        i.ion-heart
+        |{{ $store.state.lang[$store.state.conf.lang].settings.license }}
       .popup-window-footer-button(@click="flags.show = false")
         i.ion-close-round
         |{{ $store.state.lang[$store.state.conf.lang].settings.close }}
