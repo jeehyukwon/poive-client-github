@@ -37,10 +37,10 @@ base.plugins.push(
   new webpack.DefinePlugin({
     'process.env.NODE_ENV': JSON.stringify('production')
   }),
-  new BabiliWebpackPlugin({}, {
+  /* new BabiliWebpackPlugin({}, {
     comments: false,
     sourceMap: true
-  }),
+  }),*/
   // extract vendor chunks
   new webpack.optimize.CommonsChunkPlugin({
     name: 'vendor',
