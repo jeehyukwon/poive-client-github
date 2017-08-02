@@ -57,7 +57,7 @@ export default {
       state.conf.scale = conf.scale
       state.conf.defaultTemplate = conf.defaultTemplate
       state.conf.version = conf.version
-      state.conf.platform = conf.platform
+      // state.conf.platform = conf.platform
       state.conf.outputDisplay = conf.outputDisplay
 
       const view = electronSettings.get('poive.view')

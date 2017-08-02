@@ -1,3 +1,4 @@
+const electronPlatform = require('electron-platform')
 const electronSettings = require('electron-settings')
 
 const defaultConf = require('./config.json')
@@ -11,6 +12,7 @@ function install () {
   conf.defaultTemplate = defaultConf.defaultTemplate
   conf.version = defaultConf.version
   conf.outputDisplay = defaultConf.outputDisplay
+  conf.platform = electronPlatform
   electronSettings.set('poive.conf', conf)
 
   var view = defaultView
