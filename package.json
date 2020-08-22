@@ -4,10 +4,11 @@
   "description": "Presentation Tool for live environment",
   "main": "client/index.js",
   "scripts": {
-    "build": "webpack --config build/webpack.prod.js",
+    "build:client": "webpack --config build/webpack.prod.js",
+    "build:app": "electron-builder",
     "dev": "node build/server.js",
-    "app-dev": "cross-env NODE_ENV=development electron app/",
-    "app-prod": "cross-env NODE_ENV=production electron app/"
+    "app:dev": "cross-env NODE_ENV=development electron app/",
+    "app:prod": "cross-env NODE_ENV=production electron app/"
   },
   "author": "Team Poive",
   "repository": "https://jeehyukwon@gitlab.com/jeehyukwon/poive.git",
@@ -18,6 +19,13 @@
     "envs": [
       "browser"
     ]
+  },
+  "build": {
+    "directories": {
+      "buildResources": "app",
+      "output": "output",
+      "app": "app"
+    }
   },
   "dependencies": {
     "babel-runtime": "^6.18.0",
@@ -44,7 +52,8 @@
     "copy-webpack-plugin": "^4.0.1",
     "cross-env": "^2.0.0",
     "css-loader": "^0.23.1",
-    "electron": "^1.4.2",
+    "electron": "1.4.2",
+    "electron-builder": "^22.8.0",
     "electron-devtools-installer": "^2.0.1",
     "eslint-config-vue": "latest",
     "eslint-plugin-testcafe": "^0.2.0",

@@ -1,5 +1,5 @@
 {
-  "name": "Poive",
+  "name": "poive",
   "version": "0.1.0",
   "description": "Presentation Tool",
   "main": "index.js",
@@ -39,7 +39,7 @@
     "copy-webpack-plugin": "^4.0.1",
     "cross-env": "^2.0.0",
     "css-loader": "^0.23.1",
-    "electron": "^1.4.2",
+    "electron": "1.4.2",
     "electron-devtools-installer": "^2.0.1",
     "eslint-config-vue": "latest",
     "eslint-plugin-testcafe": "^0.2.0",
