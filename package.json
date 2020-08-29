@@ -1,6 +1,6 @@
 {
   "name": "poive",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Presentation Tool for live environment",
   "main": "client/index.js",
   "scripts": {
