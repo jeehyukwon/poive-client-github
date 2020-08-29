@@ -26,22 +26,6 @@
         },
         {
             "title": {
-                "ko": "머리말 2",
-                "en": "Header 2"
-            },
-            "typeSelectable": false,
-            "type": "oneLine",
-            "editable": false,
-            "text": "Poive",
-            "style": {
-                "top": "1em",
-                "right": "1em",
-                "color": "rgba(255,255,255,1)"
-            },
-            "styleToggle": false
-        },
-        {
-            "title": {
                 "ko": "꼬리말 1",
                 "en": "Footer 1"
             },

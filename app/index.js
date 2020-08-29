@@ -2,12 +2,12 @@
 const electron = require('electron')
 const electronSettings = require('electron-settings')
 const electronPlatform = require('electron-platform')
-const Menu = require('menu')
 const path = require('path')
 
 const app = electron.app
 const BrowserWindow = electron.BrowserWindow
 const ipcMain = electron.ipcMain
+const Menu = electron.Menu
 
 let mainWindow = null
 let outputWindow = null
